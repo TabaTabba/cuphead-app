@@ -9,6 +9,18 @@ export type Boss = {
   gif?: any;
   difficulty: number;
   isle: 1 | 2 | 3;
+  recommendedWeapons?: number[];
+  health?: number;
+};
+
+export type Weapon = {
+  id: string;
+  name: string;
+  url: string;
+  damage: number;
+  exDamage: number;
+  dps: number;
+  color: string;
 };
 
 export type RootStackParamList = {

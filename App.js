@@ -34,6 +34,7 @@ export default function App() {
                   headerBackTitleVisible: false,
                   headerBackButtonMenuEnabled: false,
                   headerTintColor: "white",
+                  animation: "none",
                 }}
               />
               <Stack.Screen

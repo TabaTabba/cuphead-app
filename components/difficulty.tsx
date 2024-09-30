@@ -15,13 +15,13 @@ export default function Difficulty({ difficulty }: DifficultyProps) {
 
     for (let i = 0; i < fullStars; i++) {
       stars.push(
-        <Ionicons key={`full-${i}`} name="star" size={56} color="white" />
+        <Ionicons key={`full-${i}`} name="star" size={64} color="white" />
       );
     }
 
     if (halfStar) {
       stars.push(
-        <Ionicons key="half" name="star-half" size={56} color="white" />
+        <Ionicons key="half" name="star-half" size={64} color="white" />
       );
     }
 
@@ -30,7 +30,7 @@ export default function Difficulty({ difficulty }: DifficultyProps) {
         <Ionicons
           key={`empty-${i}`}
           name="star-outline"
-          size={56}
+          size={64}
           color="white"
         />
       );

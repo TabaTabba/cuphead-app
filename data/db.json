@@ -1,310 +1,407 @@
-[
-  {
-    "id": "1",
-    "name": "The Root Pack",
-    "description": "The Root Pack is a group of four root vegetables residing on Inkwell Isle One, and the boss of the Botanic Panic! level.",
-    "appearance": "Sal Spudder is a potato, Ollie Bulb is an onion with a big purple nose, and Chauncey Chantenay is a carrot with forehead creases that hide his third eye. All of these root vegetables are rather large compared to Cuphead and Mugman. The last member is Horace Radiche, a radish with tall leaves, purple nose and eyebrows, green sclera, sharp teeth, and brown arms.",
-    "personality": "Sal Spudder's personality is unknown, but he seems to enjoy consuming dirt and worms, based on his only attack. Based on his facial expressions, he seems to have a very grouchy personality. The only time we see him smiling is on his Death Screen.",
-    "coverImage": "require('../assets/bosses/isleOne/root-pack/root-pack2.png')",
-    "images": [
-      "require('../assets/bosses/isleOne/root-pack/root-pack.gif')",
-      "require('../assets/bosses/isleOne/root-pack/root-pack.png')",
-      "require('../assets/bosses/isleOne/root-pack/root-pack2.png')"
-    ],
-    "difficulty": 0.5,
-    "isle": 1
-  },
-  {
-    "id": "2",
-    "name": "Goopy Le Grande",
-    "description": "Goopy Le Grande is one of the three bosses initially available.",
-    "appearance": "Goopy is a blue slime with a small red nose and a point on top. He is typically limbless, but his intro animation gives him an arm with a white glove on his hand. During Phase 2, Goopy grows to double his normal size and gains a pair of thick, brown eyebrows, and his arm now has a red boxing glove. In his final form, he manifests as an angry face on a grey gravestone with a cross on top, displaying the term 'RIP' (Rest In Peace). Goopy also has eyebrows in his tombstone's inscription.",
-    "personality": "Goopy acts incredibly narcissistic and overconfident in combat, always commenting on how handsome he is, even as a gravestone, as seen in his death screen. However, he seems to hold respect for his opponents, as he makes a cap-tipping gesture using the top his head to Cuphead and Mugman in his opening animation. He also maybe seen to be tricky, as implied in how he uses a jellybean to grow big in Phase 2.",
-    "coverImage": "require('../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande.png')",
-    "images": [
-      "require('../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande.gif')",
-      "require('../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande2.gif')",
-      "require('../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande3.gif')",
-      "require('../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande4.png')"
-    ],
-    "difficulty": 0.5,
-    "isle": 1
-  },
-  {
-    "id": "3",
-    "name": "Hilda Berg",
-    "description": "A zeppelin boss that transforms into various forms, found in the first isle.",
-    "appearance": "Hilda Berg bares a rather stylized design to her physical appearance in contrast to a few of the other females in the game. She has a tall, slender figure appearing as a human-zeppelin hybrid (which is seen for a split second before she eats the cloud which causes her to transform). She has pinkish, fair-colored skin and short black hair in a finger-wave haircut with a prominent hair-line in the center. Her facial structure consists of a long, pointed nose, thin black eyebrows, salmon eyelids, and three thin black eyelashes on each eye.",
-    "personality": "Hilda Berg is said to have a mischievous and playful personality. She seems fairly rude when it comes to pestering her enemies, as indicated by how she teases the brothers on how far they will get to actually beat her on the constellation screen and will even call them a wimp as seen in her Blimp death message.",
-    "coverImage": "require('../assets/bosses/isleOne/hilda-berg/hilda-berg.png')",
-    "images": [
-      "require('../assets/bosses/isleOne/hilda-berg/hilda-berg.gif')",
-      "require('../assets/bosses/isleOne/hilda-berg/hilda-berg2.gif')",
-      "require('../assets/bosses/isleOne/hilda-berg/hilda-berg3.png')",
-      "require('../assets/bosses/isleOne/hilda-berg/hilda-berg4.gif')"
-    ],
-    "difficulty": 1,
-    "isle": 1
-  },
-  {
-    "id": "4",
-    "name": "Cagney Carnation",
-    "description": "A flower boss with a thorny personality, found in the first isle.",
-    "appearance": "At first, Cagney seems like an innocent-looking flower with a stamen as a face, orange cheeks, a small, pointed nose, six orange petals, each with stripes of a darker shade of orange on the tips, large leaves that act like hands, and a dark green stem with four light green leaves on the bottom. However, shortly after, Cagney's stem grows small yellow thorns, his petals get a pointed tip in the middle of each of them, his orange cheeks completely disappear, his nose gets longer, his eyes become larger, and his leaves turn into long arms with actual hands.",
-    "personality": "Cagney is sneaky and cunning. He seems to delight in catching his enemies off guard with his appearance, posing as a harmless and adorable flower before roaring loudly. He also seems to be slightly crazed in his final phase, with his maniacal grin and shrieking laughter.",
-    "coverImage": "require('../assets/bosses/isleOne/cagney-carnation/cagney-carnation.png')",
-    "images": [
-      "require('../assets/bosses/isleOne/cagney-carnation/cagney-carnation.gif')",
-      "require('../assets/bosses/isleOne/cagney-carnation/cagney-carnation2.gif')",
-      "require('../assets/bosses/isleOne/cagney-carnation/cagney-carnation3.png')",
-      "require('../assets/bosses/isleOne/cagney-carnation/cagney-carnation4.png')"
-    ],
-    "difficulty": 1.5,
-    "isle": 1
-  },
-  {
-    "id": "5",
-    "name": "Ribby and Croaks",
-    "description": "Ribby and Croaks are unlocked after defeating the Root Pack.",
-    "appearance": "The duo seem to be wood frogs, but Croaks is a brown frog with a light salmon underside and he wears a maroon belt, brown boxing gloves and red pants/leggings. Ribby is a green frog who is shorter than Croaks, and has a yellowish white underside. He wears red boxing gloves, a red belt and white pants/leggings.",
-    "personality": "Ribby and Croaks are well-meaning hooligans with hearts of gold and a lot of moxie—sometimes a little too much moxie. Since their childhood, they were tough fighters born in the worst environments, as implied in their quotes. The fact that Ribby bawls and Croaks bangs his fist on the ground in anger when defeated in Simple mode implies that they may be somewhat dramatic and perhaps sore losers (although Croaks is such in a more aggravated way while Ribby is merely a wimp). Also, Ribby seems to sacrifice himself in order to help Croaks be stronger, showing that the brothers will do anything to protect each other.",
-    "coverImage": "require('../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks.png')",
-    "images": [
-      "require('../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks.gif')",
-      "require('../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks2.gif')",
-      "require('../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks3.gif')",
-      "require('../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks4.png')"
-    ],
-    "difficulty": 2,
-    "isle": 1
-  },
-  {
-    "id": "6",
-    "name": "Baroness Von Bon Bon",
-    "description": "A candy-themed boss that commands a sugary kingdom, found in the third isle.",
-    "appearance": "Baroness Von Bon Bon has a very feminine appearance and color palette, mainly composed of pinks. She is a tall and skinny woman, donning a good deal of resemblance to a soda bottle. She has pastel pink skin of a color similar to bubble-gum, very short, maroon-red colored hair with a large curl at the bangs, similar to a lollipop, and big yellow eyes, similar to the color of lemon drops, topped off with long eye-lashes. Whenever her mouth is entirely closed, it seems to fade behind her hot-pink, heart-shaped lipstick.",
-    "personality": "Baroness Von Bon Bon possesses a rather feisty attitude for her position as an authority figure. Whenever a subject of hers is defeated, she will shake her fist at Cuphead and/or Mugman in aggression. She can also be crazy and desperate, which is shown in the transition for the final phase, ordering her castle to charge so she can make a last attempt to destroy the brothers. In spite of her ferocity, Bon Bon appears to be somewhat dramatic, crying as soon as she is defeated. The good ending though hints that despite her earlier hostility, she's actually more of a sweet, gentle, loving person.",
-    "coverImage": "require('../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon.png')",
-    "images": [
-      "require('../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon.gif')",
-      "require('../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon2.png')",
-      "require('../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon3.png')",
-      "require('../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon4.png')",
-      "require('../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon5.png')"
-    ],
-    "difficulty": 2.5,
-    "isle": 2
-  },
-  {
-    "id": "7",
-    "name": "Beppi the Clown",
-    "description": "Beppi The Clown is one of the three bosses initially available after entering this isle.",
-    "appearance": "Beppi is a tall clown with a red and blue clown suit with a blue and a red diamond drawn on each side, as well as a collar that has blue and red triangles on the sides with the top and bottom of the collar being white. He also seems to have a red and white face as well as a small black top hat. He also has yellow eyes with black pupils, red and blue eyebrows, a long red nose, and short eyelashes. His second form resembles his first form, but portrays him as made out of balloons. His head is a giant balloon. His third form, which is faced during his fourth phase (His first form is used in phase 3 as well, except with a Charlie Horse instead of a car.), transforms him into a chair swing.",
-    "personality": "True to his nature a clown, Beppi is a fun-loving and joke-cracking character, as shown by his habit of making puns whenever the player(s) lose to him and constantly smiling and laughing throughout his battle. He is shown to use many carnival tools at his disposal, from bumper cars and balloon animals to carousel horses and roller coasters, which solidifies his fun-loving nature. Beppi also appears to have a dramatic side, as seen when he throws a fit upon his defeat in the third phase. In his fourth phase, Beppi is shown to be psychotic as evident by the maniacal laughter.",
-    "coverImage": "require('../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown.png')",
-    "images": [
-      "require('../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown.gif')",
-      "require('../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown2.png')",
-      "require('../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown3.png')",
-      "require('../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown4.png')"
-    ],
-    "difficulty": 2.5,
-    "isle": 2
-  },
-  {
-    "id": "8",
-    "name": "Djimmi the Great",
-    "description": "A genie boss with a variety of magical attacks, found in the second isle.",
-    "appearance": "Djimmi The Great is a muscular red genie wearing a turquoise vest with a yellow inside, and a turban the same color as his vest that has a red gem and a large white feather on it. Djimmi is almost always seen with his cob pipe clenched between his teeth. He also wears black and cream arm bands and light blue pants. In official art for the Switch version of Cuphead, he has a tail that matches his body. His shoes appear to be magic genie lamps.",
-    "personality": "Djimmi The Great is said to have vivacious personality. In the game, he seems to treat battling in a playful way like a manipulative trickster, as he has a near-constant grin on his face throughout the fight.",
-    "coverImage": "require('../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great.png')",
-    "images": [
-      "require('../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great.png')",
-      "require('../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great2.png')",
-      "require('../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great3.png')"
-    ],
-    "difficulty": 3,
-    "isle": 2
-  },
-  {
-    "id": "9",
-    "name": "Wally Warbles",
-    "description": "An angry bird boss that attacks in various ways, found in the second isle.",
-    "appearance": "Wally is a red-headed, blue-feathered bird who wears a cuckoo clock for armor that hides most of his body save for his legs, wings, and head. His legs are disguised as a pendulum before the battle with him begins. He has red and blue feathers and an orange beak and feet. Inside the clock resides his son.",
-    "personality": "Judging by how aggressive he appears and his son's death screen line, Wally is the patriarch of his family. He appears to be a protective father to his familiars, having a cuckoo clock for him to be kept safe in while Wally deals with his own enemies. Wally is even determined enough to fight until the end, no matter what happens to him in the process, as evident by the fact that he continues the battle featherless and on a stretcher. He also seems to have a boastful side, as suggested by the death screens from phases 1 and 3.",
-    "coverImage": "require('../assets/bosses/isleTwo/wally-warbles/wally-warbles.png')",
-    "images": [
-      "require('../assets/bosses/isleTwo/wally-warbles/wally-warbles.png')",
-      "require('../assets/bosses/isleTwo/wally-warbles/wally-warbles2.png')",
-      "require('../assets/bosses/isleTwo/wally-warbles/wally-warbles3.png')",
-      "require('../assets/bosses/isleTwo/wally-warbles/wally-warbles4.png')"
-    ],
-    "difficulty": 3,
-    "isle": 2
-  },
-  {
-    "id": "10",
-    "name": "Grim Matchstick",
-    "description": "A dragon boss that breathes fire and attacks with its tail, found in the second isle.",
-    "appearance": "Grim Matchstick bears an appearance similar to a typical dragon character from the game's time period. He is a large, slightly chubby, European dragon with a very simple design. He has lime-green scales and a light-amber underbelly (lacking segments) that starts off at his distinct, beak-like muzzle. He has large pie eyes, no visible eyebrows (minus an indentation) and featureless ears on his head.",
-    "personality": "Grim Matchstick is quirky and silly, being more like a giant, overly playful dog, just as likely to hurt you while trying to play as he would be apologetic after his folly. He strives to spook people, making 'ghostly' motions whenever the battle commences. He also stutters when speaking, as shown by his death screen lines.",
-    "coverImage": "require('../assets/bosses/isleTwo/grim-matchstick/grim-matchstick.png')",
-    "images": [
-      "require('../assets/bosses/isleTwo/grim-matchstick/grim-matchstick.gif')",
-      "require('../assets/bosses/isleTwo/grim-matchstick/grim-matchstick2.png')",
-      "require('../assets/bosses/isleTwo/grim-matchstick/grim-matchstick3.png')",
-      "require('../assets/bosses/isleTwo/grim-matchstick/grim-matchstick4.png')"
-    ],
-    "difficulty": 4,
-    "isle": 2
-  },
-  {
-    "id": "11",
-    "name": "Rumor Honeybottoms",
-    "description": "Rumor Honeybottoms is one of two initially available bosses after entering this isle.",
-    "appearance": "Rumor is a very large queen bee. She has red lipstick, a round yellow nose and a yellow and peach colored muzzle. Her primary outfit consists of a black and yellow striped bell-shaped dress with a white trim at the end of it, a black ribbon belt around the waist, and long, black sleeves with yellow cuffs. She also wears a pair of generic white gloves, and despite her full body not being shown in-game (even in the good ending) she has yellow legs and wears a pair of black high heeled shoes.",
-    "personality": "Rumor is one of the more clever bosses, using Security Bee as cannon fodder to test the abilities of her enemies. She seemingly fights Cuphead and Mugman mainly to keep her own honey protected, rather than preserve her own soul as hinted in the Phase 1 death card. She may also be an amateur in transformations, as she uses a guidebook to help her transform. It may also be that she was confident that she would be able to beat any intruder and ran out of attacks to use. She also seems to be partially mindful of what's above her, as evident by the pained groans from when she tosses the spellbook aside.",
-    "coverImage": "require('../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms.png')",
-    "images": [
-      "require('../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms.gif')",
-      "require('../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms2.png')",
-      "require('../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms3.png')"
-    ],
-    "difficulty": 3,
-    "isle": 3
-  },
-  {
-    "id": "12",
-    "name": "Sally Stageplay",
-    "description": "A theatrical boss with dramatic attacks, found in the third isle.",
-    "appearance": "Sally Stageplay is one of the sole human characters in the game, alongside Captain Brineybeard and Dr. Kahl, and she, along with the other characters, has a very basic design. Sally is a young woman, styled like 20s and 30s and possessing a lanky figure. She has fair skin, rosy cheeks, close-set pie eyes, a medium-length nose, red lipstick, and curly/puffy pale-blond hair (clearly a towhead) pulled into three segments (two pigtails and one ponytail) held in place with turquoise hairbands.",
-    "personality": "Sally loves fame and getting attention on her part. This is seen when she calls herself a starlet and tells Cuphead and Mugman to get off the stage if they lose to her. When it comes to acting, she seems to take her job very seriously to the point of treating her battle with the brothers as a part of the play she's in. In the good ending, Sally can be seen kissing the man who played as her newly married husband at the performance, showing that she does have feelings for him. Sally's Husband, judging by his behavior in the background, appears to be more of a pacifist in contrast to other Inkwell Isle residents. He also appears to be a coward to a small extent.",
-    "coverImage": "require('../assets/bosses/isleThree/sally-stageplay/sally-stageplay.png')",
-    "images": [
-      "require('../assets/bosses/isleThree/sally-stageplay/sally-stageplay.gif')",
-      "require('../assets/bosses/isleThree/sally-stageplay/sally-stageplay2.png')",
-      "require('../assets/bosses/isleThree/sally-stageplay/sally-stageplay3.png')",
-      "require('../assets/bosses/isleThree/sally-stageplay/sally-stageplay4.png')"
-    ],
-    "difficulty": 3,
-    "isle": 3
-  },
-  {
-    "id": "13",
-    "name": "Phantom Express",
-    "description": "A ghostly train boss with a spectral crew, found in the third isle.",
-    "appearance": "The Phantom Express is a steam-powered train for the dead. Each carriage is made out of wood with a dull lavender color and dull pink as its roof, has four windows and steel wheels. On board are some Spook-like passengers with zigzag mouth. Some carriages has a cup banner on the side. The last carriage has an entrance to the train, exit stairs, and two floors, with Blind Specter coming out from the top floor. One of the carriage has three smokestacks broke through the roof during the Lollipop Ghouls phase.",
-    "personality": "Everyone on the train seems to take enjoyment in poking fun at the player(s) dying. Blind Specter says that the player(s) will count the worms that go through their corpses, the Conductor says that the train's next destination is their funeral, the Lollipop Ghouls state that the train is only for the dead, but the player(s) would die against fighting them, thus being able to ride, and the Head of the Train states that he enjoys 'bringing the fright'.",
-    "coverImage": "require('../assets/bosses/isleThree/phantom-express/phantom-express.png')",
-    "images": [
-      "require('../assets/bosses/isleThree/phantom-express/phantom-express.gif')",
-      "require('../assets/bosses/isleThree/phantom-express/phantom-express2.png')",
-      "require('../assets/bosses/isleThree/phantom-express/phantom-express3.png')",
-      "require('../assets/bosses/isleThree/phantom-express/phantom-express.png')"
-    ],
-    "difficulty": 3.5,
-    "isle": 3
-  },
-  {
-    "id": "14",
-    "name": "Captain Brineybeard",
-    "description": "Pirategoodshot Captain Brineybeard is the second of two initially available bosses after entering this isle.",
-    "appearance": "Captain Brineybeard looks like a stereotypical cartoon pirate, with an eye patch, a red pirate bandana with a yellow line across it, and two wooden peg legs. His eye patch sometimes opens to reveal his intact second eye. He wears a slightly torn grey shirt with the sleeves seemingly stitched on and has yellow cuffs. He also wears a black belt with a golden, rectangular buckle, with deep red pants. Captain Brineybeard has a deep red nose, a short, but shaggy black beard, and a rotund body. He dons a golden ear piercing.",
-    "personality": "Captain Brineybeard seems to taunt his opponents before fighting them; this is hinted at the base part of the level as he laughs at both Cuphead and Mugman before they even begin to battle him. His speech is like a stereotypical pirate, with examples being not even conjugating the verb 'be' and using the accusative 'me' instead of the proper genitive 'my' in the first person and 'yer' in the second person. ('Your skills are like my buried treasure! Just a myth,' from his death screen, for example, becomes 'Yer skills be like me buried treasure! Just a myth!'')",
-    "coverImage": "require('../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard.png')",
-    "images": [
-      "require('../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard2.png')",
-      "require('../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard3.png')",
-      "require('../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard4.png')",
-      "require('../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard.png')"
-    ],
-    "difficulty": 3.5,
-    "isle": 3
-  },
-  {
-    "id": "15",
-    "name": "Werner Werman",
-    "description": "Werner Werman is a boss unlocked after defeating Sally Stageplay or completing either of the Run n' Gun levels Perilous Piers and Rugged Ridge.",
-    "appearance": "Werner is a long-snouted brown rat who operates a dented red tin soup can that bears 4 gold stars perched on a wooden cart that he uses as a battle tank. (Although during his second phase, it crumbes, leaving behind only the cart that his tank was perched on and exposing him to his opponents.) He wears white gloves, blue shoes, and light brown pants (with a tan stripe running down each side of the pants) held up by a single suspender strap. His most notable feature is his metal Pickelhaube helmet strapped to his head, giving him a slight resemblance in his design to a Prussian soldier. He also smokes a cigar. In The Cuphead Show!, his appearance remains the same, only Werner has a pink fleshy tail with a bandage wrap tied around it and either a fake German accent or can also speak with an American accent.",
-    "personality": "Werner Werman is cantankerous and a military master in his own mind. Werner Werman acts like a stereotypical German soldier from World War I, speaking in a thick and exaggerated German accent (warping his TH sequences into Z's and his W's to V's) and making a salute whenever he charges forward to attack with his tank. He appears to be interested in the late 1700- early 1900 military as he is wearing a Prussian soldier helmet (Pickelhaube) and owns a Colonial British soldier figurine.",
-    "coverImage": "require('../assets/bosses/isleThree/werner-werman/werner-werman.png')",
-    "images": [
-      "require('../assets/bosses/isleThree/werner-werman/werner-werman2.png')",
-      "require('../assets/bosses/isleThree/werner-werman/werner-werman3.png')",
-      "require('../assets/bosses/isleThree/werner-werman/werner-werman.png')",
-      "require('../assets/bosses/isleThree/werner-werman/werner-werman4.png')"
-    ],
-    "difficulty": 3,
-    "isle": 3
-  },
-  {
-    "id": "16",
-    "name": "Cala Maria",
-    "description": "Cala Maria is unlocked after defeating Captain Brineybeard.",
-    "coverImage": "require('../assets/bosses/isleThree/cala-maria/cala-maria.png')",
-    "images": [
-      "require('../assets/bosses/isleThree/cala-maria/cala-maria2.png')",
-      "require('../assets/bosses/isleThree/cala-maria/cala-maria3.png')",
-      "require('../assets/bosses/isleThree/cala-maria/cala-maria4.png')",
-      "require('../assets/bosses/isleThree/cala-maria/cala-maria5.png')"
-    ],
-    "appearance": "Cala Maria has a physical appearance reminiscent of a typical humanoid female character. She is a giant, tall, slender mermaid with fairly wide hips and a small waist. She has pale skin, a small button-nose, and two scar-like markings on the bicep of her left arm (though how or why she got them is unknown, but it could be a reminiscent of eel bite marks).",
-    "personality": "Cala Maria is said to be playful, but not to be trifled with. Cala Maria seems to be a flirty and vivacious being. She appears to be trying to seduce Cuphead and Mugman, as seen in her intro where she makes a sweet 'yoo-hoo!' sound while fluttering her eyelashes and making a pose. She may be trying to tempt them in closer and catch them off-guard, so she can attack them. A classic move for mythological sirens. Her first phase death message only helps support this. She becomes more cruel after she is forcefully transformed into a gorgon-mermaid, due to electric eels biting her waist and shocking her.",
-    "difficulty": 3.5,
-    "isle": 3
-  },
-  {
-    "id": "17",
-    "name": "Dr. Kahl's Robot",
-    "description": "A mechanical boss with robotic attacks, found in the third isle.",
-    "appearance": "Dr. Kahl sports the appearance of a typical mad scientist. He bears some dull purple hair on his near-bald head, as well as on his mustache and goatee, and wears white lab coat and gloves, along his large, round, bright green-stemmed glasses. Dr. Kahl also has an inordinately large head in comparison to the rest of his body.",
-    "personality": "Dr. Kahl is an incredibly skilled inventor, as he was able to build the Automaton out of junkyard scraps. However, he also appears to be a crazed individual, as he cackles at the cup brothers while his giant robot attacks them. He has a belligerent and conspiratorial temper mostly regarding his junkyard, source of the parts needed to fulfill his inventions.",
-    "coverImage": "require('../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot.png')",
-    "images": [
-      "require('../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot.gif')",
-      "require('../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot2.png')",
-      "require('../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot3.png')",
-      "require('../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot4.png')"
-    ],
-    "difficulty": 4.5,
-    "isle": 3
-  },
-  {
-    "id": "18",
-    "name": "King Dice",
-    "description": "The devil's right-hand man and casino owner, found in the third isle.",
-    "appearance": "King Dice is roughly six feet tall, having the body of a human man, but with his head being modeled after a floating dice. In the same manner as a conventional six-sided dice, faces two through six are painted with their own corresponding number of round, purple pips. It is only side number one that has the features of a human face, with eyes, eyebrows, a mustache and a mouth. In this case, the single purple pip in the center of the dice's face serves as his nose.",
-    "personality": "King Dice is an extremely sleazy, deceitful, untrustworthy, and manipulative individual. While on the surface he has the personality of an energetic and easygoing entertainer, he nevertheless can be as cruel and sadistic as his boss, The Devil, when he wants to be. Equally as arrogant and overconfident as the Devil, he nevertheless seems to be the more analytic and cautious amongst the working duo, as it is he who first informs his boss of the potential threat the boys may pose should they successfully fulfill their end of the bargain.",
-    "coverImage": "require('../assets/bosses/isleThree/king-dice/king-dice.png')",
-    "images": [
-      "require('../assets/bosses/isleThree/king-dice/king-dice.gif')",
-      "require('../assets/bosses/isleThree/king-dice/king-dice3.png')",
-      "require('../assets/bosses/isleThree/king-dice/king-dice4.png')",
-      "require('../assets/bosses/isleThree/king-dice/king-dice5.png')",
-      "require('../assets/bosses/isleThree/king-dice/king-dice6.png')",
-      "require('../assets/bosses/isleThree/king-dice/king-dice7.png')",
-      "require('../assets/bosses/isleThree/king-dice/king-dice8.png')",
-      "require('../assets/bosses/isleThree/king-dice/king-dice9.png')",
-      "require('../assets/bosses/isleThree/king-dice/king-dice10.png')",
-      "require('../assets/bosses/isleThree/king-dice/king-dice11.png')"
-    ],
-    "difficulty": 4.5,
-    "isle": 3
-  },
-  {
-    "id": "19",
-    "name": "The Devil",
-    "description": "The final boss of the base game, a devilish foe with several challenging phases, found in the third isle.",
-    "appearance": "With the exception of his face, hands, and feet, the majority of the Devil's body is covered in short, black fur. While the color of his face matches that of his fur, the bare skin on his hands and feet are a much lighter grey; at the end of each of his fingers and toes are short, pointed claws. He is often illustrated carrying a pitchfork in his hand and/or tapping the big toe on one of his feet.",
-    "personality": "As the series' own interpretation of Satan, the Devil is an appropriately sinister character, being feared for his adept use of trickery and deception. By taking advantage of his victims' latent greed, the Devil is shown to use gambling at his casino as a method by which to encourage his victims into making increasingly reckless, Faustian bets, eventually culminating in the forfeiture of their soul to him upon their loss. While only the ruler of the underground depths known as Inkwell Hell, the threat of his influence can nevertheless be felt all across Inkwell Isle. Even Cuphead and Mugman are said to have received 'many warnings' by the Elder Kettle to steer clear of the casino entirely. He is also very evil, as when Cuphead loses and the devil wins the bet, he is always willing to take their souls with no problem at all. The Devil has no problem of using something to destroy a person during a battle, showing him as not just evil, but unusually very murderous too. Despite these traits, whenever he is talking to his closest minions, such as King Dice, he is usually happy and normal to talk and chat with him.",
-    "coverImage": "require('../assets/bosses/isleThree/devil/devil.png')",
-    "images": [
-      "require('../assets/bosses/isleThree/devil/devil.gif')",
-      "require('../assets/bosses/isleThree/devil/devil2.gif')",
-      "require('../assets/bosses/isleThree/devil/devil3.gif')",
-      "require('../assets/bosses/isleThree/devil/devil4.gif')"
-    ],
-    "difficulty": 4,
-    "isle": 3
-  }
-]
+{
+  "weapons": [
+    {
+      "id": "1",
+      "name": "Chaser",
+      "url": "../assets/weapons/chaser.png",
+      "damage": "2.85",
+      "exDamage": "28",
+      "dps": "17.1",
+      "color": "#5a7850"
+    },
+    {
+      "id": "2",
+      "name": "Lobber",
+      "url": "../assets/weapons/lobber.png",
+      "damage": "11.6",
+      "exDamage": "28",
+      "dps": "33.14",
+      "color": "#465078"
+    },
+    {
+      "id": "3",
+      "name": "Peashooter",
+      "url": "../assets/weapons/peashooter.png",
+      "damage": "4",
+      "exDamage": "25",
+      "dps": "30",
+      "color": "#608590"
+    },
+    {
+      "id": "4",
+      "name": "Roundabout",
+      "url": "../assets/weapons/roundabout.png",
+      "damage": "8.5",
+      "exDamage": "40",
+      "dps": "31.875",
+      "color": "#5f9998"
+    },
+    {
+      "id": "5",
+      "name": "Spread",
+      "url": "../assets/weapons/spread.png",
+      "damage": "6.2",
+      "exDamage": "34.4",
+      "dps": "41.33",
+      "color": "#ae3f26"
+    },
+    {
+      "id": "6",
+      "name": "Charge",
+      "url": "../assets/weapons/charge.png",
+      "damage": "46",
+      "exDamage": "26",
+      "dps": "35.38",
+      "color": "#967c49"
+    }
+  ],
+
+  "bosses": [
+    {
+      "id": "1",
+      "name": "The Root Pack",
+      "description": "The Root Pack is a group of four root vegetables residing on Inkwell Isle One, and the boss of the Botanic Panic! level.",
+      "appearance": "Sal Spudder is a potato, Ollie Bulb is an onion with a big purple nose, and Chauncey Chantenay is a carrot with forehead creases that hide his third eye. All of these root vegetables are rather large compared to Cuphead and Mugman. The last member is Horace Radiche, a radish with tall leaves, purple nose and eyebrows, green sclera, sharp teeth, and brown arms.",
+      "personality": "Sal Spudder's personality is unknown, but he seems to enjoy consuming dirt and worms, based on his only attack. Based on his facial expressions, he seems to have a very grouchy personality. The only time we see him smiling is on his Death Screen.",
+      "coverImage": "../assets/bosses/isleOne/root-pack/root-pack2.png",
+      "images": [
+        "../assets/bosses/isleOne/root-pack/root-pack.gif",
+        "../assets/bosses/isleOne/root-pack/root-pack.png",
+        "../assets/bosses/isleOne/root-pack/root-pack2.png"
+      ],
+      "difficulty": 0.5,
+      "isle": 1,
+      "recommendedWeapons": ["3", "5", "1"],
+      "health": 1065
+    },
+    {
+      "id": "2",
+      "name": "Goopy Le Grande",
+      "description": "Goopy Le Grande is one of the three bosses initially available.",
+      "appearance": "Goopy is a blue slime with a small red nose and a point on top. He is typically limbless, but his intro animation gives him an arm with a white glove on his hand. During Phase 2, Goopy grows to double his normal size and gains a pair of thick, brown eyebrows, and his arm now has a red boxing glove. In his final form, he manifests as an angry face on a grey gravestone with a cross on top, displaying the term 'RIP' (Rest In Peace). Goopy also has eyebrows in his tombstone's inscription.",
+      "personality": "Goopy acts incredibly narcissistic and overconfident in combat, always commenting on how handsome he is, even as a gravestone, as seen in his death screen. However, he seems to hold respect for his opponents, as he makes a cap-tipping gesture using the top his head to Cuphead and Mugman in his opening animation. He also maybe seen to be tricky, as implied in how he uses a jellybean to grow big in Phase 2.",
+      "coverImage": "../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande.png",
+      "images": [
+        "../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande.gif",
+        "../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande2.gif",
+        "../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande3.gif",
+        "../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande4.png"
+      ],
+      "difficulty": 0.5,
+      "isle": 1,
+      "recommendedWeapons": ["1", "5", "6"],
+      "health": 1400
+    },
+    {
+      "id": "3",
+      "name": "Hilda Berg",
+      "description": "A zeppelin boss that transforms into various forms, found in the first isle.",
+      "appearance": "Hilda Berg bares a rather stylized design to her physical appearance in contrast to a few of the other females in the game. She has a tall, slender figure appearing as a human-zeppelin hybrid (which is seen for a split second before she eats the cloud which causes her to transform). She has pinkish, fair-colored skin and short black hair in a finger-wave haircut with a prominent hair-line in the center. Her facial structure consists of a long, pointed nose, thin black eyebrows, salmon eyelids, and three thin black eyelashes on each eye.",
+      "personality": "Hilda Berg is said to have a mischievous and playful personality. She seems fairly rude when it comes to pestering her enemies, as indicated by how she teases the brothers on how far they will get to actually beat her on the constellation screen and will even call them a wimp as seen in her Blimp death message.",
+      "coverImage": "../assets/bosses/isleOne/hilda-berg/hilda-berg.png",
+      "images": [
+        "../assets/bosses/isleOne/hilda-berg/hilda-berg.gif",
+        "../assets/bosses/isleOne/hilda-berg/hilda-berg2.gif",
+        "../assets/bosses/isleOne/hilda-berg/hilda-berg3.png",
+        "../assets/bosses/isleOne/hilda-berg/hilda-berg4.gif"
+      ],
+      "difficulty": 1,
+      "isle": 1,
+      "recommendedWeapons": ["3", "5", "1"],
+      "health": 2200
+    },
+    {
+      "id": "4",
+      "name": "Cagney Carnation",
+      "description": "A flower boss with a thorny personality, found in the first isle.",
+      "appearance": "At first, Cagney seems like an innocent-looking flower with a stamen as a face, orange cheeks, a small, pointed nose, six orange petals, each with stripes of a darker shade of orange on the tips, large leaves that act like hands, and a dark green stem with four light green leaves on the bottom. However, shortly after, Cagney's stem grows small yellow thorns, his petals get a pointed tip in the middle of each of them, his orange cheeks completely disappear, his nose gets longer, his eyes become larger, and his leaves turn into long arms with actual hands.",
+      "personality": "Cagney is sneaky and cunning. He seems to delight in catching his enemies off guard with his appearance, posing as a harmless and adorable flower before roaring loudly. He also seems to be slightly crazed in his final phase, with his maniacal grin and shrieking laughter.",
+      "coverImage": "../assets/bosses/isleOne/cagney-carnation/cagney-carnation.png",
+      "images": [
+        "../assets/bosses/isleOne/cagney-carnation/cagney-carnation.gif",
+        "../assets/bosses/isleOne/cagney-carnation/cagney-carnation2.gif",
+        "../assets/bosses/isleOne/cagney-carnation/cagney-carnation3.png",
+        "../assets/bosses/isleOne/cagney-carnation/cagney-carnation4.png"
+      ],
+      "difficulty": 1.5,
+      "isle": 1,
+      "recommendedWeapons": ["2", "4", "5"],
+      "health": 1500
+    },
+    {
+      "id": "5",
+      "name": "Ribby and Croaks",
+      "description": "Ribby and Croaks are unlocked after defeating the Root Pack.",
+      "appearance": "The duo seem to be wood frogs, but Croaks is a brown frog with a light salmon underside and he wears a maroon belt, brown boxing gloves and red pants/leggings. Ribby is a green frog who is shorter than Croaks, and has a yellowish white underside. He wears red boxing gloves, a red belt and white pants/leggings.",
+      "personality": "Ribby and Croaks are well-meaning hooligans with hearts of gold and a lot of moxie—sometimes a little too much moxie. Since their childhood, they were tough fighters born in the worst environments, as implied in their quotes. The fact that Ribby bawls and Croaks bangs his fist on the ground in anger when defeated in Simple mode implies that they may be somewhat dramatic and perhaps sore losers (although Croaks is such in a more aggravated way while Ribby is merely a wimp). Also, Ribby seems to sacrifice himself in order to help Croaks be stronger, showing that the brothers will do anything to protect each other.",
+      "coverImage": "../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks.png",
+      "images": [
+        "../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks.gif",
+        "../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks2.gif",
+        "../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks3.gif",
+        "../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks4.png"
+      ],
+      "difficulty": 2,
+      "isle": 1,
+      "recommendedWeapons": ["4", "5", "3"],
+      "health": 1900
+    },
+    {
+      "id": "6",
+      "name": "Baroness Von Bon Bon",
+      "description": "A candy-themed boss that commands a sugary kingdom, found in the third isle.",
+      "appearance": "Baroness Von Bon Bon has a very feminine appearance and color palette, mainly composed of pinks. She is a tall and skinny woman, donning a good deal of resemblance to a soda bottle. She has pastel pink skin of a color similar to bubble-gum, very short, maroon-red colored hair with a large curl at the bangs, similar to a lollipop, and big yellow eyes, similar to the color of lemon drops, topped off with long eye-lashes. Whenever her mouth is entirely closed, it seems to fade behind her hot-pink, heart-shaped lipstick.",
+      "personality": "Baroness Von Bon Bon possesses a rather feisty attitude for her position as an authority figure. Whenever a subject of hers is defeated, she will shake her fist at Cuphead and/or Mugman in aggression. She can also be crazy and desperate, which is shown in the transition for the final phase, ordering her castle to charge so she can make a last attempt to destroy the brothers. In spite of her ferocity, Bon Bon appears to be somewhat dramatic, crying as soon as she is defeated. The good ending though hints that despite her earlier hostility, she's actually more of a sweet, gentle, loving person.",
+      "coverImage": "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon.png",
+      "images": [
+        "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon.gif",
+        "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon2.png",
+        "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon3.png",
+        "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon4.png",
+        "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon5.png"
+      ],
+      "difficulty": 2.5,
+      "isle": 2,
+      "recommendedWeapons": ["3", "5", "2"],
+      "health": 1200
+    },
+    {
+      "id": "7",
+      "name": "Beppi the Clown",
+      "description": "Beppi The Clown is one of the three bosses initially available after entering this isle.",
+      "appearance": "Beppi is a tall clown with a red and blue clown suit with a blue and a red diamond drawn on each side, as well as a collar that has blue and red triangles on the sides with the top and bottom of the collar being white. He also seems to have a red and white face as well as a small black top hat. He also has yellow eyes with black pupils, red and blue eyebrows, a long red nose, and short eyelashes. His second form resembles his first form, but portrays him as made out of balloons. His head is a giant balloon. His third form, which is faced during his fourth phase (His first form is used in phase 3 as well, except with a Charlie Horse instead of a car.), transforms him into a chair swing.",
+      "personality": "True to his nature a clown, Beppi is a fun-loving and joke-cracking character, as shown by his habit of making puns whenever the player(s) lose to him and constantly smiling and laughing throughout his battle. He is shown to use many carnival tools at his disposal, from bumper cars and balloon animals to carousel horses and roller coasters, which solidifies his fun-loving nature. Beppi also appears to have a dramatic side, as seen when he throws a fit upon his defeat in the third phase. In his fourth phase, Beppi is shown to be psychotic as evident by the maniacal laughter.",
+      "coverImage": "../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown.png",
+      "images": [
+        "../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown.gif",
+        "../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown2.png",
+        "../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown3.png",
+        "../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown4.png"
+      ],
+      "difficulty": 2.5,
+      "isle": 2,
+      "recommendedWeapons": ["1", "5", "4"],
+      "health": 1850
+    },
+    {
+      "id": "8",
+      "name": "Djimmi the Great",
+      "description": "A genie boss with a variety of magical attacks, found in the second isle.",
+      "appearance": "Djimmi The Great is a muscular red genie wearing a turquoise vest with a yellow inside, and a turban the same color as his vest that has a red gem and a large white feather on it. Djimmi is almost always seen with his cob pipe clenched between his teeth. He also wears black and cream arm bands and light blue pants. In official art for the Switch version of Cuphead, he has a tail that matches his body. His shoes appear to be magic genie lamps.",
+      "personality": "Djimmi The Great is said to have vivacious personality. In the game, he seems to treat battling in a playful way like a manipulative trickster, as he has a near-constant grin on his face throughout the fight.",
+      "coverImage": "../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great.png",
+      "images": [
+        "../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great.png",
+        "../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great2.png",
+        "../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great3.png"
+      ],
+      "difficulty": 3,
+      "isle": 2,
+      "recommendedWeapons": ["3", "5", "1"],
+      "health": 2200
+    },
+    {
+      "id": "9",
+      "name": "Wally Warbles",
+      "description": "An angry bird boss that attacks in various ways, found in the second isle.",
+      "appearance": "Wally is a red-headed, blue-feathered bird who wears a cuckoo clock for armor that hides most of his body save for his legs, wings, and head. His legs are disguised as a pendulum before the battle with him begins. He has red and blue feathers and an orange beak and feet. Inside the clock resides his son.",
+      "personality": "Judging by how aggressive he appears and his son's death screen line, Wally is the patriarch of his family. He appears to be a protective father to his familiars, having a cuckoo clock for him to be kept safe in while Wally deals with his own enemies. Wally is even determined enough to fight until the end, no matter what happens to him in the process, as evident by the fact that he continues the battle featherless and on a stretcher. He also seems to have a boastful side, as suggested by the death screens from phases 1 and 3.",
+      "coverImage": "../assets/bosses/isleTwo/wally-warbles/wally-warbles.png",
+      "images": [
+        "../assets/bosses/isleTwo/wally-warbles/wally-warbles.png",
+        "../assets/bosses/isleTwo/wally-warbles/wally-warbles2.png",
+        "../assets/bosses/isleTwo/wally-warbles/wally-warbles3.png",
+        "../assets/bosses/isleTwo/wally-warbles/wally-warbles4.png"
+      ],
+      "difficulty": 3,
+      "isle": 2,
+      "recommendedWeapons": ["4", "5", "3"],
+      "health": 2100
+    },
+    {
+      "id": "10",
+      "name": "Grim Matchstick",
+      "description": "A dragon boss that breathes fire and attacks with its tail, found in the second isle.",
+      "appearance": "Grim Matchstick bears an appearance similar to a typical dragon character from the game's time period. He is a large, slightly chubby, European dragon with a very simple design. He has lime-green scales and a light-amber underbelly (lacking segments) that starts off at his distinct, beak-like muzzle. He has large pie eyes, no visible eyebrows (minus an indentation) and featureless ears on his head.",
+      "personality": "Grim Matchstick is quirky and silly, being more like a giant, overly playful dog, just as likely to hurt you while trying to play as he would be apologetic after his folly. He strives to spook people, making 'ghostly' motions whenever the battle commences. He also stutters when speaking, as shown by his death screen lines.",
+      "coverImage": "../assets/bosses/isleTwo/grim-matchstick/grim-matchstick.png",
+      "images": [
+        "../assets/bosses/isleTwo/grim-matchstick/grim-matchstick.gif",
+        "../assets/bosses/isleTwo/grim-matchstick/grim-matchstick2.png",
+        "../assets/bosses/isleTwo/grim-matchstick/grim-matchstick3.png",
+        "../assets/bosses/isleTwo/grim-matchstick/grim-matchstick4.png"
+      ],
+      "difficulty": 4,
+      "isle": 2,
+      "recommendedWeapons": ["6", "2", "1"],
+      "health": 1900
+    },
+    {
+      "id": "11",
+      "name": "Rumor Honeybottoms",
+      "description": "Rumor Honeybottoms is one of two initially available bosses after entering this isle.",
+      "appearance": "Rumor is a very large queen bee. She has red lipstick, a round yellow nose and a yellow and peach colored muzzle. Her primary outfit consists of a black and yellow striped bell-shaped dress with a white trim at the end of it, a black ribbon belt around the waist, and long, black sleeves with yellow cuffs. She also wears a pair of generic white gloves, and despite her full body not being shown in-game (even in the good ending) she has yellow legs and wears a pair of black high heeled shoes.",
+      "personality": "Rumor is one of the more clever bosses, using Security Bee as cannon fodder to test the abilities of her enemies. She seemingly fights Cuphead and Mugman mainly to keep her own honey protected, rather than preserve her own soul as hinted in the Phase 1 death card. She may also be an amateur in transformations, as she uses a guidebook to help her transform. It may also be that she was confident that she would be able to beat any intruder and ran out of attacks to use. She also seems to be partially mindful of what's above her, as evident by the pained groans from when she tosses the spellbook aside.",
+      "coverImage": "../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms.png",
+      "images": [
+        "../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms.gif",
+        "../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms2.png",
+        "../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms3.png"
+      ],
+      "difficulty": 3,
+      "isle": 3,
+      "recommendedWeapons": ["2", "5", "1"],
+      "health": 1400
+    },
+    {
+      "id": "12",
+      "name": "Sally Stageplay",
+      "description": "A theatrical boss with dramatic attacks, found in the third isle.",
+      "appearance": "Sally Stageplay is one of the sole human characters in the game, alongside Captain Brineybeard and Dr. Kahl, and she, along with the other characters, has a very basic design. Sally is a young woman, styled like 20s and 30s and possessing a lanky figure. She has fair skin, rosy cheeks, close-set pie eyes, a medium-length nose, red lipstick, and curly/puffy pale-blond hair (clearly a towhead) pulled into three segments (two pigtails and one ponytail) held in place with turquoise hairbands.",
+      "personality": "Sally loves fame and getting attention on her part. This is seen when she calls herself a starlet and tells Cuphead and Mugman to get off the stage if they lose to her. When it comes to acting, she seems to take her job very seriously to the point of treating her battle with the brothers as a part of the play she's in. In the good ending, Sally can be seen kissing the man who played as her newly married husband at the performance, showing that she does have feelings for him. Sally's Husband, judging by his behavior in the background, appears to be more of a pacifist in contrast to other Inkwell Isle residents. He also appears to be a coward to a small extent.",
+      "coverImage": "../assets/bosses/isleThree/sally-stageplay/sally-stageplay.png",
+      "images": [
+        "../assets/bosses/isleThree/sally-stageplay/sally-stageplay.gif",
+        "../assets/bosses/isleThree/sally-stageplay/sally-stageplay2.png",
+        "../assets/bosses/isleThree/sally-stageplay/sally-stageplay3.png",
+        "../assets/bosses/isleThree/sally-stageplay/sally-stageplay4.png"
+      ],
+      "difficulty": 3,
+      "isle": 3,
+      "recommendedWeapons": ["1", "5", "6"],
+      "health": 1700
+    },
+    {
+      "id": "13",
+      "name": "Phantom Express",
+      "description": "A ghostly train boss with a spectral crew, found in the third isle.",
+      "appearance": "The Phantom Express is a steam-powered train for the dead. Each carriage is made out of wood with a dull lavender color and dull pink as its roof, has four windows and steel wheels. On board are some Spook-like passengers with zigzag mouth. Some carriages has a cup banner on the side. The last carriage has an entrance to the train, exit stairs, and two floors, with Blind Specter coming out from the top floor. One of the carriage has three smokestacks broke through the roof during the Lollipop Ghouls phase.",
+      "personality": "Everyone on the train seems to take enjoyment in poking fun at the player(s) dying. Blind Specter says that the player(s) will count the worms that go through their corpses, the Conductor says that the train's next destination is their funeral, the Lollipop Ghouls state that the train is only for the dead, but the player(s) would die against fighting them, thus being able to ride, and the Head of the Train states that he enjoys 'bringing the fright'.",
+      "coverImage": "../assets/bosses/isleThree/phantom-express/phantom-express.png",
+      "images": [
+        "../assets/bosses/isleThree/phantom-express/phantom-express.gif",
+        "../assets/bosses/isleThree/phantom-express/phantom-express2.png",
+        "../assets/bosses/isleThree/phantom-express/phantom-express3.png",
+        "../assets/bosses/isleThree/phantom-express/phantom-express.png"
+      ],
+      "difficulty": 3.5,
+      "isle": 3,
+      "recommendedWeapons": ["4", "5", "6"],
+      "health": 1400
+    },
+    {
+      "id": "14",
+      "name": "Captain Brineybeard",
+      "description": "Pirategoodshot Captain Brineybeard is the second of two initially available bosses after entering this isle.",
+      "appearance": "Captain Brineybeard looks like a stereotypical cartoon pirate, with an eye patch, a red pirate bandana with a yellow line across it, and two wooden peg legs. His eye patch sometimes opens to reveal his intact second eye. He wears a slightly torn grey shirt with the sleeves seemingly stitched on and has yellow cuffs. He also wears a black belt with a golden, rectangular buckle, with deep red pants. Captain Brineybeard has a deep red nose, a short, but shaggy black beard, and a rotund body. He dons a golden ear piercing.",
+      "personality": "Captain Brineybeard seems to taunt his opponents before fighting them; this is hinted at the base part of the level as he laughs at both Cuphead and Mugman before they even begin to battle him. His speech is like a stereotypical pirate, with examples being not even conjugating the verb 'be' and using the accusative 'me' instead of the proper genitive 'my' in the first person and 'yer' in the second person. ('Your skills are like my buried treasure! Just a myth,' from his death screen, for example, becomes 'Yer skills be like me buried treasure! Just a myth!'')",
+      "coverImage": "../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard.png",
+      "images": [
+        "../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard2.png",
+        "../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard3.png",
+        "../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard4.png",
+        "../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard.png"
+      ],
+      "difficulty": 3.5,
+      "isle": 3,
+      "recommendedWeapons": ["4", "5", "3"],
+      "health": 1400
+    },
+    {
+      "id": "15",
+      "name": "Werner Werman",
+      "description": "Werner Werman is a boss unlocked after defeating Sally Stageplay or completing either of the Run n' Gun levels Perilous Piers and Rugged Ridge.",
+      "appearance": "Werner is a long-snouted brown rat who operates a dented red tin soup can that bears 4 gold stars perched on a wooden cart that he uses as a battle tank. (Although during his second phase, it crumbes, leaving behind only the cart that his tank was perched on and exposing him to his opponents.) He wears white gloves, blue shoes, and light brown pants (with a tan stripe running down each side of the pants) held up by a single suspender strap. His most notable feature is his metal Pickelhaube helmet strapped to his head, giving him a slight resemblance in his design to a Prussian soldier. He also smokes a cigar. In The Cuphead Show!, his appearance remains the same, only Werner has a pink fleshy tail with a bandage wrap tied around it and either a fake German accent or can also speak with an American accent.",
+      "personality": "Werner Werman is cantankerous and a military master in his own mind. Werner Werman acts like a stereotypical German soldier from World War I, speaking in a thick and exaggerated German accent (warping his TH sequences into Z's and his W's to V's) and making a salute whenever he charges forward to attack with his tank. He appears to be interested in the late 1700- early 1900 military as he is wearing a Prussian soldier helmet (Pickelhaube) and owns a Colonial British soldier figurine.",
+      "coverImage": "../assets/bosses/isleThree/werner-werman/werner-werman.png",
+      "images": [
+        "../assets/bosses/isleThree/werner-werman/werner-werman2.png",
+        "../assets/bosses/isleThree/werner-werman/werner-werman3.png",
+        "../assets/bosses/isleThree/werner-werman/werner-werman.png",
+        "../assets/bosses/isleThree/werner-werman/werner-werman4.png"
+      ],
+      "difficulty": 3,
+      "isle": 3,
+      "recommendedWeapons": ["4", "5", "3"],
+      "health": 2100
+    },
+    {
+      "id": "16",
+      "name": "Cala Maria",
+      "description": "Cala Maria is unlocked after defeating Captain Brineybeard.",
+      "coverImage": "../assets/bosses/isleThree/cala-maria/cala-maria.png",
+      "images": [
+        "../assets/bosses/isleThree/cala-maria/cala-maria2.png",
+        "../assets/bosses/isleThree/cala-maria/cala-maria3.png",
+        "../assets/bosses/isleThree/cala-maria/cala-maria4.png",
+        "../assets/bosses/isleThree/cala-maria/cala-maria5.png"
+      ],
+      "appearance": "Cala Maria has a physical appearance reminiscent of a typical humanoid female character. She is a giant, tall, slender mermaid with fairly wide hips and a small waist. She has pale skin, a small button-nose, and two scar-like markings on the bicep of her left arm (though how or why she got them is unknown, but it could be a reminiscent of eel bite marks).",
+      "personality": "Cala Maria is said to be playful, but not to be trifled with. Cala Maria seems to be a flirty and vivacious being. She appears to be trying to seduce Cuphead and Mugman, as seen in her intro where she makes a sweet 'yoo-hoo!' sound while fluttering her eyelashes and making a pose. She may be trying to tempt them in closer and catch them off-guard, so she can attack them. A classic move for mythological sirens. Her first phase death message only helps support this. She becomes more cruel after she is forcefully transformed into a gorgon-mermaid, due to electric eels biting her waist and shocking her.",
+      "difficulty": 3.5,
+      "isle": 3,
+      "recommendedWeapons": ["4", "5", "3"],
+      "health": 2300
+    },
+    {
+      "id": "17",
+      "name": "Dr. Kahl's Robot",
+      "description": "A mechanical boss with robotic attacks, found in the third isle.",
+      "appearance": "Dr. Kahl sports the appearance of a typical mad scientist. He bears some dull purple hair on his near-bald head, as well as on his mustache and goatee, and wears white lab coat and gloves, along his large, round, bright green-stemmed glasses. Dr. Kahl also has an inordinately large head in comparison to the rest of his body.",
+      "personality": "Dr. Kahl is an incredibly skilled inventor, as he was able to build the Automaton out of junkyard scraps. However, he also appears to be a crazed individual, as he cackles at the cup brothers while his giant robot attacks them. He has a belligerent and conspiratorial temper mostly regarding his junkyard, source of the parts needed to fulfill his inventions.",
+      "coverImage": "../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot.png",
+      "images": [
+        "../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot.gif",
+        "../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot2.png",
+        "../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot3.png",
+        "../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot4.png"
+      ],
+      "difficulty": 4.5,
+      "isle": 3,
+      "recommendedWeapons": ["4", "5", "3"],
+      "health": 2100
+    },
+    {
+      "id": "18",
+      "name": "King Dice",
+      "description": "The devil's right-hand man and casino owner, found in the third isle.",
+      "appearance": "King Dice is roughly six feet tall, having the body of a human man, but with his head being modeled after a floating dice. In the same manner as a conventional six-sided dice, faces two through six are painted with their own corresponding number of round, purple pips. It is only side number one that has the features of a human face, with eyes, eyebrows, a mustache and a mouth. In this case, the single purple pip in the center of the dice's face serves as his nose.",
+      "personality": "King Dice is an extremely sleazy, deceitful, untrustworthy, and manipulative individual. While on the surface he has the personality of an energetic and easygoing entertainer, he nevertheless can be as cruel and sadistic as his boss, The Devil, when he wants to be. Equally as arrogant and overconfident as the Devil, he nevertheless seems to be the more analytic and cautious amongst the working duo, as it is he who first informs his boss of the potential threat the boys may pose should they successfully fulfill their end of the bargain.",
+      "coverImage": "../assets/bosses/isleThree/king-dice/king-dice.png",
+      "images": [
+        "../assets/bosses/isleThree/king-dice/king-dice.gif",
+        "../assets/bosses/isleThree/king-dice/king-dice3.png",
+        "../assets/bosses/isleThree/king-dice/king-dice4.png",
+        "../assets/bosses/isleThree/king-dice/king-dice5.png",
+        "../assets/bosses/isleThree/king-dice/king-dice6.png",
+        "../assets/bosses/isleThree/king-dice/king-dice7.png",
+        "../assets/bosses/isleThree/king-dice/king-dice8.png",
+        "../assets/bosses/isleThree/king-dice/king-dice9.png",
+        "../assets/bosses/isleThree/king-dice/king-dice10.png",
+        "../assets/bosses/isleThree/king-dice/king-dice11.png"
+      ],
+      "difficulty": 4.5,
+      "isle": 3,
+      "recommendedWeapons": ["1", "5", "4"],
+      "health": 800
+    },
+    {
+      "id": "19",
+      "name": "The Devil",
+      "description": "The final boss of the base game, a devilish foe with several challenging phases, found in the third isle.",
+      "appearance": "With the exception of his face, hands, and feet, the majority of the Devil's body is covered in short, black fur. While the color of his face matches that of his fur, the bare skin on his hands and feet are a much lighter grey; at the end of each of his fingers and toes are short, pointed claws. He is often illustrated carrying a pitchfork in his hand and/or tapping the big toe on one of his feet.",
+      "personality": "As the series' own interpretation of Satan, the Devil is an appropriately sinister character, being feared for his adept use of trickery and deception. By taking advantage of his victims' latent greed, the Devil is shown to use gambling at his casino as a method by which to encourage his victims into making increasingly reckless, Faustian bets, eventually culminating in the forfeiture of their soul to him upon their loss. While only the ruler of the underground depths known as Inkwell Hell, the threat of his influence can nevertheless be felt all across Inkwell Isle. Even Cuphead and Mugman are said to have received 'many warnings' by the Elder Kettle to steer clear of the casino entirely. He is also very evil, as when Cuphead loses and the devil wins the bet, he is always willing to take their souls with no problem at all. The Devil has no problem of using something to destroy a person during a battle, showing him as not just evil, but unusually very murderous too. Despite these traits, whenever he is talking to his closest minions, such as King Dice, he is usually happy and normal to talk and chat with him.",
+      "coverImage": "../assets/bosses/isleThree/devil/devil.png",
+      "images": [
+        "../assets/bosses/isleThree/devil/devil.gif",
+        "../assets/bosses/isleThree/devil/devil2.gif",
+        "../assets/bosses/isleThree/devil/devil3.gif",
+        "../assets/bosses/isleThree/devil/devil4.gif"
+      ],
+      "difficulty": 4,
+      "isle": 3,
+      "recommendedWeapons": ["4", "5", "3"],
+      "health": 2100
+    }
+  ]
+}

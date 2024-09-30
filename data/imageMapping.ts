@@ -1,0 +1,122 @@
+import { ImageSourcePropType } from "react-native";
+
+export const imageMapping: { [key: string]: ImageSourcePropType } = {
+  "../assets/bosses/isleOne/root-pack/root-pack2.png": require("../assets/bosses/isleOne/root-pack/root-pack2.png"),
+  "../assets/bosses/isleOne/root-pack/root-pack.png": require("../assets/bosses/isleOne/root-pack/root-pack.png"),
+  "../assets/bosses/isleOne/root-pack/root-pack.gif": require("../assets/bosses/isleOne/root-pack/root-pack.gif"),
+
+  "../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande.png": require("../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande.png"),
+  "../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande.gif": require("../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande.gif"),
+  "../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande2.gif": require("../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande2.gif"),
+  "../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande3.gif": require("../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande3.gif"),
+  "../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande4.png": require("../assets/bosses/isleOne/goopy-le-grande/goopy-le-grande4.png"),
+
+  "../assets/bosses/isleOne/hilda-berg/hilda-berg.png": require("../assets/bosses/isleOne/hilda-berg/hilda-berg.png"),
+  "../assets/bosses/isleOne/hilda-berg/hilda-berg.gif": require("../assets/bosses/isleOne/hilda-berg/hilda-berg.gif"),
+  "../assets/bosses/isleOne/hilda-berg/hilda-berg2.gif": require("../assets/bosses/isleOne/hilda-berg/hilda-berg2.gif"),
+  "../assets/bosses/isleOne/hilda-berg/hilda-berg3.png": require("../assets/bosses/isleOne/hilda-berg/hilda-berg3.png"),
+  "../assets/bosses/isleOne/hilda-berg/hilda-berg4.gif": require("../assets/bosses/isleOne/hilda-berg/hilda-berg4.gif"),
+
+  "../assets/bosses/isleOne/cagney-carnation/cagney-carnation.png": require("../assets/bosses/isleOne/cagney-carnation/cagney-carnation.png"),
+  "../assets/bosses/isleOne/cagney-carnation/cagney-carnation.gif": require("../assets/bosses/isleOne/cagney-carnation/cagney-carnation.gif"),
+  "../assets/bosses/isleOne/cagney-carnation/cagney-carnation2.gif": require("../assets/bosses/isleOne/cagney-carnation/cagney-carnation2.gif"),
+  "../assets/bosses/isleOne/cagney-carnation/cagney-carnation3.png": require("../assets/bosses/isleOne/cagney-carnation/cagney-carnation3.png"),
+  "../assets/bosses/isleOne/cagney-carnation/cagney-carnation4.png": require("../assets/bosses/isleOne/cagney-carnation/cagney-carnation4.png"),
+
+  "../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks.png": require("../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks.png"),
+  "../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks.gif": require("../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks.gif"),
+  "../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks2.gif": require("../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks2.gif"),
+  "../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks3.gif": require("../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks3.gif"),
+  "../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks4.png": require("../assets/bosses/isleOne/ribby-and-croaks/ribby-and-croaks4.png"),
+
+  "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon.png": require("../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon.png"),
+  "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon.gif": require("../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon.gif"),
+  "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon2.png": require("../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon2.png"),
+  "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon3.png": require("../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon3.png"),
+  "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon4.png": require("../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon4.png"),
+  "../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon5.png": require("../assets/bosses/isleTwo/baroness-von-bon-bon/baroness-von-bon-bon5.png"),
+
+  "../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown.png": require("../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown.png"),
+  "../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown.gif": require("../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown.gif"),
+  "../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown2.png": require("../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown2.png"),
+  "../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown3.png": require("../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown3.png"),
+  "../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown4.png": require("../assets/bosses/isleTwo/beppi-the-clown/beppi-the-clown4.png"),
+
+  "../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great.png": require("../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great.png"),
+  "../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great2.png": require("../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great2.png"),
+  "../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great3.png": require("../assets/bosses/isleTwo/djimmi-the-great/djimmi-the-great3.png"),
+
+  "../assets/bosses/isleTwo/wally-warbles/wally-warbles.png": require("../assets/bosses/isleTwo/wally-warbles/wally-warbles.png"),
+  "../assets/bosses/isleTwo/wally-warbles/wally-warbles2.png": require("../assets/bosses/isleTwo/wally-warbles/wally-warbles2.png"),
+  "../assets/bosses/isleTwo/wally-warbles/wally-warbles3.png": require("../assets/bosses/isleTwo/wally-warbles/wally-warbles3.png"),
+  "../assets/bosses/isleTwo/wally-warbles/wally-warbles4.png": require("../assets/bosses/isleTwo/wally-warbles/wally-warbles4.png"),
+
+  "../assets/bosses/isleTwo/grim-matchstick/grim-matchstick.png": require("../assets/bosses/isleTwo/grim-matchstick/grim-matchstick.png"),
+  "../assets/bosses/isleTwo/grim-matchstick/grim-matchstick.gif": require("../assets/bosses/isleTwo/grim-matchstick/grim-matchstick.gif"),
+  "../assets/bosses/isleTwo/grim-matchstick/grim-matchstick2.png": require("../assets/bosses/isleTwo/grim-matchstick/grim-matchstick2.png"),
+  "../assets/bosses/isleTwo/grim-matchstick/grim-matchstick3.png": require("../assets/bosses/isleTwo/grim-matchstick/grim-matchstick3.png"),
+  "../assets/bosses/isleTwo/grim-matchstick/grim-matchstick4.png": require("../assets/bosses/isleTwo/grim-matchstick/grim-matchstick4.png"),
+
+  "../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms.png": require("../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms.png"),
+  "../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms.gif": require("../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms.gif"),
+  "../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms2.png": require("../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms2.png"),
+  "../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms3.png": require("../assets/bosses/isleThree/rumor-honeybottoms/rumor-honeybottoms3.png"),
+
+  "../assets/bosses/isleThree/sally-stageplay/sally-stageplay.png": require("../assets/bosses/isleThree/sally-stageplay/sally-stageplay.png"),
+  "../assets/bosses/isleThree/sally-stageplay/sally-stageplay.gif": require("../assets/bosses/isleThree/sally-stageplay/sally-stageplay.gif"),
+  "../assets/bosses/isleThree/sally-stageplay/sally-stageplay2.png": require("../assets/bosses/isleThree/sally-stageplay/sally-stageplay2.png"),
+  "../assets/bosses/isleThree/sally-stageplay/sally-stageplay3.png": require("../assets/bosses/isleThree/sally-stageplay/sally-stageplay3.png"),
+  "../assets/bosses/isleThree/sally-stageplay/sally-stageplay4.png": require("../assets/bosses/isleThree/sally-stageplay/sally-stageplay4.png"),
+
+  "../assets/bosses/isleThree/phantom-express/phantom-express.gif": require("../assets/bosses/isleThree/phantom-express/phantom-express.gif"),
+  "../assets/bosses/isleThree/phantom-express/phantom-express2.png": require("../assets/bosses/isleThree/phantom-express/phantom-express2.png"),
+  "../assets/bosses/isleThree/phantom-express/phantom-express3.png": require("../assets/bosses/isleThree/phantom-express/phantom-express3.png"),
+  "../assets/bosses/isleThree/phantom-express/phantom-express.png": require("../assets/bosses/isleThree/phantom-express/phantom-express.png"),
+
+  "../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard2.png": require("../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard2.png"),
+  "../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard3.png": require("../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard3.png"),
+  "../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard4.png": require("../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard4.png"),
+  "../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard.png": require("../assets/bosses/isleThree/captain-brineybeard/captain-brineybeard.png"),
+
+  "../assets/bosses/isleThree/werner-werman/werner-werman2.png": require("../assets/bosses/isleThree/werner-werman/werner-werman2.png"),
+  "../assets/bosses/isleThree/werner-werman/werner-werman3.png": require("../assets/bosses/isleThree/werner-werman/werner-werman3.png"),
+  "../assets/bosses/isleThree/werner-werman/werner-werman.png": require("../assets/bosses/isleThree/werner-werman/werner-werman.png"),
+  "../assets/bosses/isleThree/werner-werman/werner-werman4.png": require("../assets/bosses/isleThree/werner-werman/werner-werman4.png"),
+
+  "../assets/bosses/isleThree/cala-maria/cala-maria.png": require("../assets/bosses/isleThree/cala-maria/cala-maria.png"),
+  "../assets/bosses/isleThree/cala-maria/cala-maria2.png": require("../assets/bosses/isleThree/cala-maria/cala-maria2.png"),
+  "../assets/bosses/isleThree/cala-maria/cala-maria3.png": require("../assets/bosses/isleThree/cala-maria/cala-maria3.png"),
+  "../assets/bosses/isleThree/cala-maria/cala-maria4.png": require("../assets/bosses/isleThree/cala-maria/cala-maria4.png"),
+  "../assets/bosses/isleThree/cala-maria/cala-maria5.png": require("../assets/bosses/isleThree/cala-maria/cala-maria5.png"),
+
+  "../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot.png": require("../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot.png"),
+  "../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot.gif": require("../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot.gif"),
+  "../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot2.png": require("../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot2.png"),
+  "../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot3.png": require("../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot3.png"),
+  "../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot4.png": require("../assets/bosses/isleThree/dr-kahls-robot/dr-kahls-robot4.png"),
+
+  "../assets/bosses/isleThree/king-dice/king-dice.png": require("../assets/bosses/isleThree/king-dice/king-dice.png"),
+  "../assets/bosses/isleThree/king-dice/king-dice.gif": require("../assets/bosses/isleThree/king-dice/king-dice.gif"),
+  "../assets/bosses/isleThree/king-dice/king-dice3.png": require("../assets/bosses/isleThree/king-dice/king-dice3.png"),
+  "../assets/bosses/isleThree/king-dice/king-dice4.png": require("../assets/bosses/isleThree/king-dice/king-dice4.png"),
+  "../assets/bosses/isleThree/king-dice/king-dice5.png": require("../assets/bosses/isleThree/king-dice/king-dice5.png"),
+  "../assets/bosses/isleThree/king-dice/king-dice6.png": require("../assets/bosses/isleThree/king-dice/king-dice6.png"),
+  "../assets/bosses/isleThree/king-dice/king-dice7.png": require("../assets/bosses/isleThree/king-dice/king-dice7.png"),
+  "../assets/bosses/isleThree/king-dice/king-dice8.png": require("../assets/bosses/isleThree/king-dice/king-dice8.png"),
+  "../assets/bosses/isleThree/king-dice/king-dice9.png": require("../assets/bosses/isleThree/king-dice/king-dice9.png"),
+  "../assets/bosses/isleThree/king-dice/king-dice10.png": require("../assets/bosses/isleThree/king-dice/king-dice10.png"),
+  "../assets/bosses/isleThree/king-dice/king-dice11.png": require("../assets/bosses/isleThree/king-dice/king-dice11.png"),
+
+  "../assets/bosses/isleThree/devil/devil.png": require("../assets/bosses/isleThree/devil/devil.png"),
+  "../assets/bosses/isleThree/devil/devil.gif": require("../assets/bosses/isleThree/devil/devil.gif"),
+  "../assets/bosses/isleThree/devil/devil2.gif": require("../assets/bosses/isleThree/devil/devil2.gif"),
+  "../assets/bosses/isleThree/devil/devil3.gif": require("../assets/bosses/isleThree/devil/devil3.gif"),
+  "../assets/bosses/isleThree/devil/devil4.gif": require("../assets/bosses/isleThree/devil/devil4.gif"),
+
+  "../assets/weapons/chaser.png": require("../assets/weapons/chaser.png"),
+  "../assets/weapons/spread.png": require("../assets/weapons/spread.png"),
+  "../assets/weapons/charge.png": require("../assets/weapons/charge.png"),
+  "../assets/weapons/lobber.png": require("../assets/weapons/lobber.png"),
+  "../assets/weapons/peashooter.png": require("../assets/weapons/peashooter.png"),
+  "../assets/weapons/roundabout.png": require("../assets/weapons/roundabout.png"),
+};

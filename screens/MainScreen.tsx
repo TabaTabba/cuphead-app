@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import {
   View,
   Text,
@@ -8,8 +8,9 @@ import {
   Dimensions,
   TouchableWithoutFeedback,
   FlatList,
+  ActivityIndicator,
 } from "react-native";
-import { BOSSES } from "../data/mockData";
+import axios from "axios";
 import { Boss } from "../data/types";
 import { IconButton } from "../components/iconButton";
 import { useDispatch, useSelector } from "react-redux";
@@ -17,18 +18,14 @@ import { setTheme } from "../redux/theme";
 import { RootState } from "../redux/store";
 import { themes } from "../data/themeData";
 import { ImageButton } from "../components/imageButton";
+import { imageMapping } from "../data/imageMapping";
+import { addFavorite, removeFavorite } from "../redux/favorites";
 
 const { height: screenHeight } = Dimensions.get("window");
 
-const isles = [
-  {
-    id: "1",
-    title: "ISLE 1",
-    data: BOSSES.filter((boss) => boss.isle === 1),
-  },
-  { id: "2", title: "ISLE 2", data: BOSSES.filter((boss) => boss.isle === 2) },
-  { id: "3", title: "ISLE 3", data: BOSSES.filter((boss) => boss.isle === 3) },
-];
+const getImage = (path: string) => {
+  return imageMapping[path] || null;
+};
 
 const RenderSectionHeader = ({
   section,
@@ -70,34 +67,95 @@ const RenderSectionHeader = ({
 
 export default function MainScreen({ navigation }: any) {
   const [expandedIsle, setExpandedIsle] = useState<string | null>(null);
-  const dispatch = useDispatch();
+  const [isles, setIsles] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const favorites = useSelector((state: RootState) => state.favoriteBosses.ids);
 
+  const dispatch = useDispatch();
   const theme = useSelector((state: RootState) => state.theme.theme);
-  const themeStyles = themes[theme];
+  const themeStyles = useMemo(() => themes[theme], [theme]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/bosses")
+      .then((response) => {
+        const bosses = response.data;
+        const organizedIsles = [
+          {
+            id: "1",
+            title: "ISLE 1",
+            data: bosses.filter((boss: Boss) => boss.isle === 1),
+          },
+          {
+            id: "2",
+            title: "ISLE 2",
+            data: bosses.filter((boss: Boss) => boss.isle === 2),
+          },
+          {
+            id: "3",
+            title: "ISLE 3",
+            data: bosses.filter((boss: Boss) => boss.isle === 3),
+          },
+        ];
+        setIsles(organizedIsles);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching bosses:", error);
+        setLoading(false);
+      });
+  }, []);
 
   const toggleIsle = (id: string) => {
     setExpandedIsle(expandedIsle === id ? null : id);
   };
 
-  const renderItem = ({ item }: { item: Boss }) => (
-    <TouchableOpacity
-      onPress={() => navigation.navigate("DetailsScreen", { item })}
-    >
-      <View
-        style={[
-          styles.itemContainer,
-          { backgroundColor: themeStyles.backgroundColor },
-        ]}
-      >
-        <Image
-          source={item.coverImage}
-          style={styles.bossImage}
-          resizeMode="contain"
-        />
-        <Text style={styles.title}>{item.name}</Text>
-      </View>
-    </TouchableOpacity>
+  const navigateToAnotherScreen = useCallback(
+    (path: string, item?: Boss) => {
+      navigation.navigate(`${path}`, item && { item });
+    },
+    [navigation]
   );
+
+  function renderItem({ item }: { item: Boss }) {
+    const bossIsFavorite = favorites.includes(+item.id);
+
+    function changeFavoriteStatusHandler() {
+      if (bossIsFavorite) {
+        dispatch(removeFavorite({ id: item.id }));
+      } else {
+        dispatch(addFavorite({ id: item.id }));
+      }
+    }
+    return (
+      <>
+        <TouchableOpacity
+          onPress={() => navigateToAnotherScreen("DetailsScreen", item)}
+        >
+          <View
+            style={[
+              styles.itemContainer,
+              { backgroundColor: themeStyles.backgroundColor },
+            ]}
+          >
+            <Image
+              source={getImage(item.coverImage)}
+              style={styles.bossImage}
+              resizeMode="contain"
+            />
+            <Text style={styles.bossTitle}>{item.name}</Text>
+          </View>
+        </TouchableOpacity>
+        <IconButton
+          name={bossIsFavorite ? "star" : "star-outline"}
+          size={28}
+          color="white"
+          onPress={changeFavoriteStatusHandler}
+          style={styles.starIcon}
+        />
+      </>
+    );
+  }
 
   const renderSection = ({
     section,
@@ -119,11 +177,19 @@ export default function MainScreen({ navigation }: any) {
         }
         data={section.data}
         renderItem={renderItem}
-        keyExtractor={(item) => item.id}
+        keyExtractor={(item) => item.id.toString()}
         showsVerticalScrollIndicator={false}
       />
     );
   };
+
+  if (loading) {
+    return (
+      <View style={styles.loaderContainer}>
+        <ActivityIndicator size="large" color="#0000ff" />
+      </View>
+    );
+  }
 
   return (
     <View style={styles.rootContainer}>
@@ -134,44 +200,46 @@ export default function MainScreen({ navigation }: any) {
         ]}
       >
         <View style={styles.iconsContainer}>
-          <ImageButton
-            source={require("../assets/cuphead-theme.png")}
-            width={28}
-            height={28}
-            style={{ tintColor: "white", marginBottom: 20 }}
-            onPress={() => dispatch(setTheme("cuphead"))}
-          />
-          <ImageButton
-            source={require("../assets/mugman-theme.png")}
-            width={28}
-            height={28}
-            style={{ tintColor: "white", marginBottom: 20 }}
-            onPress={() => dispatch(setTheme("mugman"))}
-          />
-          <IconButton
-            size={28}
-            name="moon"
-            color="white"
-            style={{ marginBottom: 20 }}
-            onPress={() => dispatch(setTheme("default"))}
-          />
+          {theme === "default" && (
+            <ImageButton
+              source={require("../assets/cuphead-theme.png")}
+              width={28}
+              height={28}
+              style={{ tintColor: "white", marginBottom: 20 }}
+              onPress={() => dispatch(setTheme("cuphead"))}
+            />
+          )}
+          {theme === "cuphead" && (
+            <ImageButton
+              source={require("../assets/mugman-theme.png")}
+              width={28}
+              height={28}
+              style={{ tintColor: "white", marginBottom: 20 }}
+              onPress={() => dispatch(setTheme("mugman"))}
+            />
+          )}
+          {theme === "mugman" && (
+            <IconButton
+              size={28}
+              name="moon"
+              color="white"
+              style={{ marginBottom: 20 }}
+              onPress={() => dispatch(setTheme("default"))}
+            />
+          )}
           <IconButton
             name="star"
             size={28}
             color={"white"}
             style={{ marginBottom: 20 }}
-            onPress={() => {
-              navigation.navigate("FavoritesScreen");
-            }}
+            onPress={() => navigateToAnotherScreen("FavoritesScreen")}
           />
           <IconButton
             name="search"
             size={28}
             color={"white"}
             style={{ marginBottom: 20 }}
-            onPress={() => {
-              navigation.navigate("SearchScreen");
-            }}
+            onPress={() => navigateToAnotherScreen("SearchScreen")}
           />
         </View>
       </View>
@@ -203,20 +271,10 @@ const styles = StyleSheet.create({
   },
   sidebar: {
     width: "10%",
-
     borderRightWidth: 2,
     borderColor: "black",
     justifyContent: "flex-end",
     alignItems: "center",
-  },
-  logoContainer: {
-    flex: 1,
-    alignItems: "center",
-  },
-  logo: {
-    width: 32,
-    height: 32,
-    marginTop: 100,
   },
   iconsContainer: {
     marginBottom: 50,
@@ -235,7 +293,7 @@ const styles = StyleSheet.create({
   isleTitle: {
     fontSize: 32,
     fontWeight: "700",
-    color: "#E0E0E0",
+    color: "white",
     fontFamily: "futura",
   },
   itemContainer: {
@@ -250,11 +308,21 @@ const styles = StyleSheet.create({
     width: "95%",
     height: 400,
   },
-  title: {
+  bossTitle: {
     marginTop: 20,
     fontSize: 22,
     fontWeight: "bold",
-    color: "#E0E0E0",
+    color: "white",
     fontFamily: "futura",
+  },
+  loaderContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  starIcon: {
+    position: "absolute",
+    top: 20,
+    right: 10,
   },
 });

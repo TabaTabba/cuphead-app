@@ -4,6 +4,7 @@ import {
   StyleSheet,
   Text,
   TextInput,
+  TouchableOpacity,
   View,
 } from "react-native";
 import { useSelector } from "react-redux";
@@ -12,8 +13,6 @@ import { themes } from "../data/themeData";
 import { useLayoutEffect, useState } from "react";
 import { BOSSES } from "../data/mockData";
 import { ImageButton } from "../components/imageButton";
-import { Picker } from "@react-native-picker/picker";
-import RNPickerSelect from "react-native-picker-select";
 import StarRating from "../components/starRating";
 
 const screenWidth = Dimensions.get("window").width;
@@ -32,7 +31,6 @@ function SearchScreen({ navigation }: any) {
     const matchesDifficulty =
       selectedDifficulty == 0 || boss.difficulty == selectedDifficulty;
     const matchesIsle = selectedIsle == 0 || boss.isle == selectedIsle;
-
     return matchesSearch && matchesDifficulty && matchesIsle;
   });
 
@@ -69,34 +67,62 @@ function SearchScreen({ navigation }: any) {
         { backgroundColor: themeStyles.backgroundColor },
       ]}
     >
-      <View style={styles.filterContainer}>
-        <View style={styles.difficultyContainer}>
-          <Text style={styles.difficultyText}>Difficulty</Text>
+      <View style={styles.filtersContainer}>
+        <View style={styles.filterContainer}>
+          <Text style={styles.filterText}>Difficulty</Text>
           <StarRating onRatingPress={setSelectedDifficulty} />
         </View>
-        {/* <Picker
-          selectedValue={selectedIsle}
-          onValueChange={(itemValue) => setSelectedIsle(itemValue)}
-          style={styles.picker}
-        >
-          <Picker.Item
-            label="Select Isle"
-            value={0}
-            style={styles.pickerItem}
-            color="white"
-          />
-          <Picker.Item label="I" value={1} color="white" />
-          <Picker.Item label="II" value={2} color="white" />
-          <Picker.Item label="III" value={3} color="white" />
-        </Picker> */}
+        <View style={styles.filterContainer}>
+          <Text style={[styles.filterText, { marginBottom: 24 }]}>Isle</Text>
+          <View style={styles.filterContainer}>
+            <TouchableOpacity
+              style={[
+                styles.isleButton,
+                selectedIsle === 1 && { backgroundColor: "white" },
+              ]}
+              onPress={() => setSelectedIsle(selectedIsle === 1 ? 0 : 1)}
+            >
+              <Text
+                style={[
+                  selectedIsle === 1 ? { color: "black" } : { color: "white" },
+                ]}
+              >
+                I
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[
+                styles.isleButton,
+                selectedIsle === 2 && { backgroundColor: "white" },
+              ]}
+              onPress={() => setSelectedIsle(selectedIsle === 2 ? 0 : 2)}
+            >
+              <Text
+                style={[
+                  selectedIsle === 2 ? { color: "black" } : { color: "white" },
+                ]}
+              >
+                II
+              </Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[
+                styles.isleButton,
+                selectedIsle === 3 && { backgroundColor: "white" },
+              ]}
+              onPress={() => setSelectedIsle(selectedIsle === 3 ? 0 : 3)}
+            >
+              <Text
+                style={[
+                  selectedIsle === 3 ? { color: "black" } : { color: "white" },
+                ]}
+              >
+                III
+              </Text>
+            </TouchableOpacity>
+          </View>
+        </View>
       </View>
-      {/* <RNPickerSelect
-        onValueChange={(value) => console.log(value)}
-        items={[
-          { label: "0.5", value: 0.5 },
-          { label: "1", value: 1 },
-        ]}
-      /> */}
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.input}
@@ -130,7 +156,34 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 20,
   },
+  filtersContainer: {
+    flex: 6,
+    flexDirection: "column",
+  },
+  filterContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginBottom: 20,
+  },
+  filterText: {
+    color: "white",
+    fontFamily: "futura",
+    fontSize: 20,
+    fontWeight: "bold",
+  },
+  isleButton: {
+    width: 88,
+    height: 48,
+    justifyContent: "center",
+    alignItems: "center",
+    borderColor: "white",
+    borderWidth: 1,
+    marginLeft: 8,
+    borderRadius: 4,
+  },
   inputContainer: {
+    flex: 1,
     marginTop: 20,
     paddingHorizontal: 15,
     paddingVertical: 10,
@@ -140,23 +193,6 @@ const styles = StyleSheet.create({
   input: {
     fontSize: 16,
     color: "white",
-    backgroundColor: "transparent",
-  },
-  filterContainer: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-  difficultyContainer: {
-    flex: 1,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-  },
-  difficultyText: {
-    color: "white",
-    fontFamily: "futura",
-    fontSize: 18,
-    fontWeight: "bold",
   },
   itemContainer: {
     marginBottom: 40,
@@ -187,7 +223,7 @@ const styles = StyleSheet.create({
     color: "white",
   },
   resultsContainer: {
-    flex: 1,
+    flex: 30,
     marginTop: 20,
   },
 });

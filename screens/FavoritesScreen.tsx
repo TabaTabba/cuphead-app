@@ -1,10 +1,11 @@
 import { useSelector } from "react-redux";
 import { Dimensions, FlatList, StyleSheet, Text, View } from "react-native";
 import { RootState } from "../redux/store";
-import { BOSSES } from "../data/mockData";
+
 import { themes } from "../data/themeData";
 import { useLayoutEffect } from "react";
 import { ImageButton } from "../components/imageButton";
+import { BOSSES } from "../data/mockData";
 
 const screenWidth = Dimensions.get("window").width;
 
