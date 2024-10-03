@@ -27,7 +27,7 @@ import { addFavorite, removeFavorite } from "../redux/favorites";
 import { RootState } from "../redux/store";
 import Difficulty from "../components/difficulty";
 import { themes } from "../data/themeData";
-import { imageMapping } from "../data/imageMapping";
+import { imageMapping } from "../utility/imageMapping";
 import { fetchWeapons } from "../utility/api";
 import { WeaponPopup } from "../components/weaponPopup";
 import HealthBar from "../components/healthBar";
@@ -220,40 +220,6 @@ export default function DetailsScreen({ route, navigation }: Props) {
         contentContainerStyle={{ paddingBottom: 48 }}
         showsVerticalScrollIndicator={false}
       >
-        {/* <View
-          style={{ flexDirection: "row", marginTop: 32, alignSelf: "center" }}
-        >
-          <Image
-            source={require("../assets/heart.png")}
-            style={{ width: 40, height: 40 }}
-            resizeMode="contain"
-          />
-          <View
-            style={{
-              width: "70%",
-              alignSelf: "center",
-              marginLeft: 4,
-            }}
-          >
-            <View
-              style={{
-                height: 30,
-                overflow: "hidden",
-                borderRadius: 20,
-                backgroundColor: "black",
-              }}
-            >
-              <View
-                style={{
-                  width: `${(item.health / 2500) * 100}%`,
-                  backgroundColor: Colors.red200,
-                  height: "100%",
-                  borderRadius: 16,
-                }}
-              />
-            </View>
-          </View>
-        </View> */}
         <HealthBar currentHealth={item.health} maxHealth={2500} />
         <View style={styles.difficultyContainer}>
           <Difficulty difficulty={item.difficulty} />

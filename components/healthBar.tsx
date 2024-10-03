@@ -1,4 +1,3 @@
-// HealthBar.tsx
 import React from "react";
 import { View, Image, StyleSheet } from "react-native";
 import { Colors } from "../assets/colors";
@@ -14,7 +13,7 @@ export default function ({ currentHealth, maxHealth }: HealthBarProps) {
   return (
     <View style={styles.container}>
       <Image
-        source={require("../assets/heart.png")}
+        source={require("../assets/images/heart.png")}
         style={styles.heartIcon}
         resizeMode="contain"
       />

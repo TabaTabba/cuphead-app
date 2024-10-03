@@ -4,7 +4,7 @@ export type Boss = {
   description: string;
   appearance?: string;
   personality?: string;
-  coverImage?: any;
+  coverImage?: any; //these wouldn't be "any" in a real project where data has a solid source
   images: any;
   gif?: any;
   difficulty: number;

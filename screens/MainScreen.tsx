@@ -1,11 +1,5 @@
-import React, {
-  useState,
-  useEffect,
-  useCallback,
-  useMemo,
-  useRef,
-} from "react";
-import { View, StyleSheet, Dimensions, FlatList, Animated } from "react-native";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
+import { View, StyleSheet, Dimensions, FlatList } from "react-native";
 import { Boss } from "../data/types";
 import { IconButton } from "../components/iconButton";
 import { useDispatch, useSelector } from "react-redux";
@@ -31,11 +25,11 @@ export default function MainScreen({ navigation }) {
 
   const themeConfig = {
     default: {
-      icon: require("../assets/cuphead-theme.png"),
+      icon: require("../assets/images/cuphead-theme.png"),
       action: () => dispatch(setTheme("cuphead")),
     },
     cuphead: {
-      icon: require("../assets/mugman-theme.png"),
+      icon: require("../assets/images/mugman-theme.png"),
       action: () => dispatch(setTheme("mugman")),
     },
     mugman: {

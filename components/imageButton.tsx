@@ -1,8 +1,8 @@
 import React from "react";
-import { Image, TouchableOpacity } from "react-native";
+import { Image, ImageSourcePropType, TouchableOpacity } from "react-native";
 
 type ImageButtonProps = {
-  source: any;
+  source: ImageSourcePropType;
   width?: number;
   height?: number;
   style?: Object;
