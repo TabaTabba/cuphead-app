@@ -1,16 +1,11 @@
-import React, { useState, useEffect, useCallback, useMemo } from "react";
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  StyleSheet,
-  Image,
-  Dimensions,
-  TouchableWithoutFeedback,
-  FlatList,
-  ActivityIndicator,
-} from "react-native";
-import axios from "axios";
+import React, {
+  useState,
+  useEffect,
+  useCallback,
+  useMemo,
+  useRef,
+} from "react";
+import { View, StyleSheet, Dimensions, FlatList, Animated } from "react-native";
 import { Boss } from "../data/types";
 import { IconButton } from "../components/iconButton";
 import { useDispatch, useSelector } from "react-redux";
@@ -18,66 +13,48 @@ import { setTheme } from "../redux/theme";
 import { RootState } from "../redux/store";
 import { themes } from "../data/themeData";
 import { ImageButton } from "../components/imageButton";
-import { imageMapping } from "../data/imageMapping";
-import { addFavorite, removeFavorite } from "../redux/favorites";
+import { fetchBosses } from "../utility/api";
+import { SectionHeader } from "../components/sectionHeader";
+import { BossItem } from "../components/bossItem";
 
 const { height: screenHeight } = Dimensions.get("window");
 
-const getImage = (path: string) => {
-  return imageMapping[path] || null;
-};
-
-const RenderSectionHeader = ({
-  section,
-  expandedIsle,
-  themeStyles,
-  toggleIsle,
-}: {
-  section: { id: string; title: string };
-  expandedIsle: string;
-  themeStyles: any;
-  toggleIsle: any;
-}) => {
-  const isExpanded = expandedIsle === section.id;
-
-  return (
-    <TouchableWithoutFeedback onPress={() => toggleIsle(section.id)}>
-      <View
-        style={[
-          styles.isleHeader,
-          { backgroundColor: themeStyles.backgroundColor },
-          expandedIsle
-            ? {
-                height:
-                  isExpanded || section.id === "1"
-                    ? screenHeight / 10
-                    : screenHeight / 20,
-              }
-            : { height: screenHeight / 3 },
-          expandedIsle && section.id === "1"
-            ? { justifyContent: "flex-end" }
-            : { justifyContent: "center" },
-        ]}
-      >
-        <Text style={styles.isleTitle}>{section.title}</Text>
-      </View>
-    </TouchableWithoutFeedback>
-  );
-};
-
-export default function MainScreen({ navigation }: any) {
+export default function MainScreen({ navigation }) {
   const [expandedIsle, setExpandedIsle] = useState<string | null>(null);
-  const [isles, setIsles] = useState<any[]>([]);
-  const [loading, setLoading] = useState(true);
-  const favorites = useSelector((state: RootState) => state.favoriteBosses.ids);
+  const [isles, setIsles] = useState<
+    { id: string; title: string; data: Boss[] }[]
+  >([]);
 
   const dispatch = useDispatch();
   const theme = useSelector((state: RootState) => state.theme.theme);
   const themeStyles = useMemo(() => themes[theme], [theme]);
 
+  const themeConfig = {
+    default: {
+      icon: require("../assets/cuphead-theme.png"),
+      action: () => dispatch(setTheme("cuphead")),
+    },
+    cuphead: {
+      icon: require("../assets/mugman-theme.png"),
+      action: () => dispatch(setTheme("mugman")),
+    },
+    mugman: {
+      icon: "moon",
+      action: () => dispatch(setTheme("default")),
+    },
+  };
+  const ThemeButton = themeConfig[theme];
+
+  const commonButtonProps = {
+    source: ThemeButton.icon,
+    width: 28,
+    height: 28,
+    style: { tintColor: "white", marginBottom: 20 },
+    onPress: ThemeButton.action,
+  };
+
   useEffect(() => {
-    axios
-      .get("http://localhost:3000/bosses")
+    fetchBosses()
       .then((response) => {
         const bosses = response.data;
         const organizedIsles = [
@@ -98,11 +75,9 @@ export default function MainScreen({ navigation }: any) {
           },
         ];
         setIsles(organizedIsles);
-        setLoading(false);
       })
       .catch((error) => {
         console.error("Error fetching bosses:", error);
-        setLoading(false);
       });
   }, []);
 
@@ -111,50 +86,14 @@ export default function MainScreen({ navigation }: any) {
   };
 
   const navigateToAnotherScreen = useCallback(
-    (path: string, item?: Boss) => {
-      navigation.navigate(`${path}`, item && { item });
+    (path: string) => {
+      navigation.navigate(`${path}`);
     },
     [navigation]
   );
 
   function renderItem({ item }: { item: Boss }) {
-    const bossIsFavorite = favorites.includes(+item.id);
-
-    function changeFavoriteStatusHandler() {
-      if (bossIsFavorite) {
-        dispatch(removeFavorite({ id: item.id }));
-      } else {
-        dispatch(addFavorite({ id: item.id }));
-      }
-    }
-    return (
-      <>
-        <TouchableOpacity
-          onPress={() => navigateToAnotherScreen("DetailsScreen", item)}
-        >
-          <View
-            style={[
-              styles.itemContainer,
-              { backgroundColor: themeStyles.backgroundColor },
-            ]}
-          >
-            <Image
-              source={getImage(item.coverImage)}
-              style={styles.bossImage}
-              resizeMode="contain"
-            />
-            <Text style={styles.bossTitle}>{item.name}</Text>
-          </View>
-        </TouchableOpacity>
-        <IconButton
-          name={bossIsFavorite ? "star" : "star-outline"}
-          size={28}
-          color="white"
-          onPress={changeFavoriteStatusHandler}
-          style={styles.starIcon}
-        />
-      </>
-    );
+    return <BossItem item={item} themeStyles={themeStyles} />;
   }
 
   const renderSection = ({
@@ -164,11 +103,7 @@ export default function MainScreen({ navigation }: any) {
   }) => {
     const isExpanded = expandedIsle === section.id;
 
-    if (!isExpanded) {
-      return null;
-    }
-
-    return (
+    return isExpanded ? (
       <FlatList
         style={
           isExpanded && section.id === "1"
@@ -180,16 +115,8 @@ export default function MainScreen({ navigation }: any) {
         keyExtractor={(item) => item.id.toString()}
         showsVerticalScrollIndicator={false}
       />
-    );
+    ) : null;
   };
-
-  if (loading) {
-    return (
-      <View style={styles.loaderContainer}>
-        <ActivityIndicator size="large" color="#0000ff" />
-      </View>
-    );
-  }
 
   return (
     <View style={styles.rootContainer}>
@@ -199,32 +126,20 @@ export default function MainScreen({ navigation }: any) {
           { backgroundColor: themeStyles.backgroundColor },
         ]}
       >
-        <View style={styles.iconsContainer}>
-          {theme === "default" && (
-            <ImageButton
-              source={require("../assets/cuphead-theme.png")}
-              width={28}
-              height={28}
-              style={{ tintColor: "white", marginBottom: 20 }}
-              onPress={() => dispatch(setTheme("cuphead"))}
-            />
-          )}
-          {theme === "cuphead" && (
-            <ImageButton
-              source={require("../assets/mugman-theme.png")}
-              width={28}
-              height={28}
-              style={{ tintColor: "white", marginBottom: 20 }}
-              onPress={() => dispatch(setTheme("mugman"))}
-            />
-          )}
-          {theme === "mugman" && (
+        <View
+          style={{
+            marginBottom: 48,
+          }}
+        >
+          {theme !== "mugman" ? (
+            <ImageButton {...commonButtonProps} />
+          ) : (
             <IconButton
+              name={ThemeButton.icon}
               size={28}
-              name="moon"
               color="white"
               style={{ marginBottom: 20 }}
-              onPress={() => dispatch(setTheme("default"))}
+              onPress={ThemeButton.action}
             />
           )}
           <IconButton
@@ -244,14 +159,14 @@ export default function MainScreen({ navigation }: any) {
         </View>
       </View>
       <View
-        style={[
-          styles.sectionsContainer,
-          { backgroundColor: themeStyles.backgroundColor },
-        ]}
+        style={{
+          flexGrow: 1,
+          backgroundColor: themeStyles.backgroundColor,
+        }}
       >
         {isles.map((isle) => (
           <View key={isle.id}>
-            <RenderSectionHeader
+            <SectionHeader
               section={isle}
               expandedIsle={expandedIsle}
               themeStyles={themeStyles}
@@ -275,54 +190,5 @@ const styles = StyleSheet.create({
     borderColor: "black",
     justifyContent: "flex-end",
     alignItems: "center",
-  },
-  iconsContainer: {
-    marginBottom: 50,
-    justifyContent: "space-between",
-  },
-  sectionsContainer: {
-    flexGrow: 1,
-  },
-  isleHeader: {
-    borderBottomWidth: 0.75,
-    borderTopWidth: 0.75,
-    borderColor: "black",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  isleTitle: {
-    fontSize: 32,
-    fontWeight: "700",
-    color: "white",
-    fontFamily: "futura",
-  },
-  itemContainer: {
-    paddingHorizontal: 10,
-    paddingVertical: 25,
-    borderBottomWidth: 0.5,
-    borderColor: "black",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  bossImage: {
-    width: "95%",
-    height: 400,
-  },
-  bossTitle: {
-    marginTop: 20,
-    fontSize: 22,
-    fontWeight: "bold",
-    color: "white",
-    fontFamily: "futura",
-  },
-  loaderContainer: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  starIcon: {
-    position: "absolute",
-    top: 20,
-    right: 10,
   },
 });

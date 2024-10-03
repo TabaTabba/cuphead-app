@@ -14,10 +14,13 @@ import { useLayoutEffect, useState } from "react";
 import { BOSSES } from "../data/mockData";
 import { ImageButton } from "../components/imageButton";
 import StarRating from "../components/starRating";
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { Boss, RootStackParamList } from "../data/types";
 
 const screenWidth = Dimensions.get("window").width;
+type Props = NativeStackScreenProps<RootStackParamList, "DetailsScreen">;
 
-function SearchScreen({ navigation }: any) {
+function SearchScreen({ navigation }: Props) {
   const theme = useSelector((state: RootState) => state.theme.theme);
   const themeStyles = themes[theme];
   const [searchText, setSearchText] = useState("");
@@ -40,13 +43,13 @@ function SearchScreen({ navigation }: any) {
         backgroundColor: themeStyles.backgroundColor,
       },
     });
-  }, [navigation]);
+  }, [navigation, themeStyles]);
 
   function searchHandler(text: string) {
     setSearchText(text);
   }
 
-  function renderBoss({ item }: { item: any }) {
+  function renderBoss({ item }: { item: Boss }) {
     return (
       <View style={styles.itemContainer}>
         <ImageButton

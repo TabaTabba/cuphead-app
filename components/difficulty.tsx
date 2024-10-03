@@ -2,9 +2,9 @@ import React from "react";
 import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
-interface DifficultyProps {
+type DifficultyProps = {
   difficulty: number;
-}
+};
 
 export default function Difficulty({ difficulty }: DifficultyProps) {
   const renderStars = () => {
@@ -21,7 +21,16 @@ export default function Difficulty({ difficulty }: DifficultyProps) {
 
     if (halfStar) {
       stars.push(
-        <Ionicons key="half" name="star-half" size={64} color="white" />
+        <View key="half-star">
+          <Ionicons
+            key="full"
+            name="star"
+            size={64}
+            color="rgba(255, 255, 255, 0.2)"
+            style={{ position: "absolute" }}
+          />
+          <Ionicons key="half" name="star-half" size={64} color="white" />
+        </View>
       );
     }
 
@@ -29,9 +38,9 @@ export default function Difficulty({ difficulty }: DifficultyProps) {
       stars.push(
         <Ionicons
           key={`empty-${i}`}
-          name="star-outline"
+          name="star"
           size={64}
-          color="white"
+          color="rgba(255, 255, 255, 0.2)"
         />
       );
     }

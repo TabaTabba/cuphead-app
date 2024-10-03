@@ -1,15 +1,24 @@
 import { useSelector } from "react-redux";
 import { Dimensions, FlatList, StyleSheet, Text, View } from "react-native";
 import { RootState } from "../redux/store";
-
 import { themes } from "../data/themeData";
-import { useLayoutEffect } from "react";
+import { useCallback, useLayoutEffect } from "react";
 import { ImageButton } from "../components/imageButton";
 import { BOSSES } from "../data/mockData";
+import { NativeStackScreenProps } from "@react-navigation/native-stack";
+import { Boss, RootStackParamList } from "../data/types";
 
 const screenWidth = Dimensions.get("window").width;
+type Props = NativeStackScreenProps<RootStackParamList, "DetailsScreen">;
 
-function FavoritesScreen({ navigation }: any) {
+function FavoritesScreen({ navigation }: Props) {
+  const navigateToDetails = useCallback(
+    (item: Boss) => {
+      navigation.navigate("DetailsScreen", { item });
+    },
+    [navigation]
+  );
+
   const favoriteBossIds = useSelector(
     (state: RootState) => state.favoriteBosses.ids
   );
@@ -26,7 +35,7 @@ function FavoritesScreen({ navigation }: any) {
         backgroundColor: themeStyles.backgroundColor,
       },
     });
-  }, [navigation]);
+  }, [navigation, themeStyles]);
 
   if (favoriteBosses.length === 0) {
     return (
@@ -44,19 +53,22 @@ function FavoritesScreen({ navigation }: any) {
     );
   }
 
-  function renderBossItem({ item }: { item: any }) {
-    return (
-      <View style={styles.itemContainer}>
-        <ImageButton
-          source={item.coverImage}
-          style={styles.image}
-          resizeMode="contain"
-          onPress={() => navigation.navigate("DetailsScreen", { item })}
-        />
-        <Text style={styles.name}>{item.name}</Text>
-      </View>
-    );
-  }
+  const renderBossItem = useCallback(
+    ({ item }: { item: Boss }) => {
+      return (
+        <View style={styles.itemContainer}>
+          <ImageButton
+            source={item.coverImage}
+            style={styles.image}
+            resizeMode="contain"
+            onPress={() => navigateToDetails(item)}
+          />
+          <Text style={styles.name}>{item.name}</Text>
+        </View>
+      );
+    },
+    [navigateToDetails]
+  );
 
   return (
     <View

@@ -1,14 +1,14 @@
 import React from "react";
 import { Image, TouchableOpacity } from "react-native";
 
-interface ImageButtonProps {
+type ImageButtonProps = {
   source: any;
   width?: number;
   height?: number;
   style?: Object;
   resizeMode?: "center" | "contain" | "cover" | "repeat" | "stretch";
   onPress?: () => void;
-}
+};
 
 export function ImageButton({
   source,
